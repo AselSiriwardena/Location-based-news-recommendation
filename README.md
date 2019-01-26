@@ -7,4 +7,4 @@ So in arranging it is better to organize based on location or user related feeds
 In this project we are trying to get users preferences about their news choices and as a result of hectic life pattern of people we are going to recommend our users what they only wish to watch. Another feature of this is that this is according to location. So technologies we are wishing to use are ML, NLP, Web Crowling etc
 
 when publisher upload some articles into their system they get connected to our database and when users get connected to our system they will be able to view news trends according to their given wishes and based on location tracked by our system. In order to identify readers preferences their activities were get saved in our database.
-Thankyou.
+Thankyou
