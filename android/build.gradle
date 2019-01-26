@@ -2,7 +2,7 @@
 
 buildscript {
     ext {
-        googlePlayServicesVersion = "16.0.1"
+       
         buildToolsVersion = "27.0.3"
         minSdkVersion = 16
         compileSdkVersion = 27
@@ -12,9 +12,14 @@ buildscript {
     repositories {
         google()
         jcenter()
+
+         maven{
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath 'com.android.tools.build:gradle:3.1.2'
         classpath 'com.google.gms:google-services:4.0.1'
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -31,6 +36,10 @@ allprojects {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url "$rootDir/../node_modules/react-native/android"
         }
+        maven{
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
     }
 }
 
@@ -39,4 +48,3 @@ task wrapper(type: Wrapper) {
     gradleVersion = '4.4'
     distributionUrl = distributionUrl.replace("bin", "all")
 }
-com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true

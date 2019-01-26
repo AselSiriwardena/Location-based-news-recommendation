@@ -9,6 +9,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View,SafeAreaView,ScrollView,Dimensions,Image} from 'react-native';
 import {createDrawerNavigator,DrawerItems} from 'react-navigation'
+
 import HomeScreen from './screens/HomeScreen'
 import SettingsScreen from './screens/SettingsScreen'
 const {width}= Dimensions.get('window')
