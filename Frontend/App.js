@@ -7,11 +7,12 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View,SafeAreaView,ScrollView,Dimensions,Image} from 'react-native';
-import {createDrawerNavigator,DrawerItems} from 'react-navigation'
+import {Platform, StyleSheet, Text, View,SafeAreaView,ScrollView,Dimensions,Image,Button,TouchableOpacity} from 'react-native';
+import {createDrawerNavigator,DrawerItems} from 'react-navigation';
 
 import HomeScreen from './screens/HomeScreen'
 import SettingsScreen from './screens/SettingsScreen'
+
 const {width}= Dimensions.get('window')
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -20,15 +21,14 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-
-
-
 export default class App extends React.Component {
 
-  
   render() {
+   
     return (
+      
       <AppDrawerNavigator />
+   
     );
   }
 }
