@@ -8,3 +8,5 @@ In this project we are trying to get users preferences about their news choices 
 
 when publisher upload some articles into their system they get connected to our database and when users get connected to our system they will be able to view news trends according to their given wishes and based on location tracked by our system. In order to identify readers preferences their activities were get saved in our database.
 Thankyou
+
+Peshala
