@@ -36,3 +36,32 @@ LookupError:
     - 'E:\\nltk_data'
     - ''
 **********************************************************************
+
+//Nltk thing resolved but after changing text to url
+==================================================================================================================
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\acer\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package averaged_perceptron_tagger to
+[nltk_data]     C:\Users\acer\AppData\Roaming\nltk_data...
+[nltk_data]   Package averaged_perceptron_tagger is already up-to-
+[nltk_data]       date!
+[nltk_data] Downloading package maxent_ne_chunker to
+[nltk_data]     C:\Users\acer\AppData\Roaming\nltk_data...
+[nltk_data]   Package maxent_ne_chunker is already up-to-date!
+[nltk_data] Downloading package words to
+[nltk_data]     C:\Users\acer\AppData\Roaming\nltk_data...
+[nltk_data]   Package words is already up-to-date!
+Traceback (most recent call last):
+  File "E:/Git/Clone/Location-based-news-reccomendation/Backend/NLP.py", line 19, in <module>
+    places = geograpy.get_place_context(url=url)
+  File "C:\Users\acer\AppData\Local\Programs\Python\Python36\lib\site-packages\geograpy\__init__.py", line 11, in get_place_context
+    pc.set_cities()
+  File "C:\Users\acer\AppData\Local\Programs\Python\Python36\lib\site-packages\geograpy\places.py", line 137, in set_cities
+    self.populate_db()
+  File "C:\Users\acer\AppData\Local\Programs\Python\Python36\lib\site-packages\geograpy\places.py", line 30, in populate_db
+    for row in reader:
+  File "C:\Users\acer\AppData\Local\Programs\Python\Python36\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 274: character maps to <undefined>
+
