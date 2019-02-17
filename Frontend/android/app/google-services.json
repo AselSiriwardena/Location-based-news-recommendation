@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "336686632358",
+    "firebase_url": "https://locationbasednews.firebaseio.com",
+    "project_id": "locationbasednews",
+    "storage_bucket": "locationbasednews.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336686632358:android:44e003b4a9e46ef9",
+        "android_client_info": {
+          "package_name": "com.news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336686632358-319j3cp1mil572gffkc6j00sruij9pm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI8ouWG_YV3jC6RwysDe1a2eptCdD5QEQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
