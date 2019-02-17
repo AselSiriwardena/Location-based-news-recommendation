@@ -1,0 +1,232 @@
+Metadata-Version: 2.1
+Name: cloudstorage
+Version: 0.9.0
+Summary: Unified cloud storage API for storage services.
+Home-page: https://github.com/scottwernervt/cloudstorage/
+Author: Scott Werner
+Author-email: scott.werner.vt@gmail.com
+License: MIT
+Keywords: storage amazon aws s3 azure rackspace cloudfiles google cloudstorage gcs minio
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: docs
+Provides-Extra: amazon
+Provides-Extra: rackspace
+Provides-Extra: local
+Provides-Extra: minio
+Provides-Extra: google
+Provides-Extra: microsoft
+Requires-Dist: inflection (>=0.3.1)
+Requires-Dist: python-dateutil (>=2.7.3)
+Requires-Dist: python-magic (>=0.4.15)
+Requires-Dist: typing; python_version < "3.5"
+Requires-Dist: httpstatus35; python_version < "3.5"
+Provides-Extra: amazon
+Requires-Dist: boto3 (>=1.7.60); extra == 'amazon'
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'docs'
+Requires-Dist: Pygments; extra == 'docs'
+Provides-Extra: google
+Requires-Dist: google-cloud-storage (>=1.10.0); extra == 'google'
+Provides-Extra: local
+Requires-Dist: filelock (>=3.0.0); extra == 'local'
+Requires-Dist: itsdangerous (>=0.24); extra == 'local'
+Requires-Dist: xattr (>=0.9.3); extra == 'local'
+Provides-Extra: microsoft
+Requires-Dist: azure (>=3.0.0); extra == 'microsoft'
+Provides-Extra: minio
+Requires-Dist: minio (>=4.0.0); extra == 'minio'
+Provides-Extra: rackspace
+Requires-Dist: openstacksdk (<=0.17.2); extra == 'rackspace'
+Requires-Dist: rackspacesdk (>=0.7.5); extra == 'rackspace'
+Requires-Dist: requests (>=2.19.1); extra == 'rackspace'
+
+=============
+Cloud Storage
+=============
+
+
+
+`Cloud Storage`_ is a Python +3.4 package which creates a unified API for the
+cloud storage services: Amazon Simple Storage Service (S3),
+Microsoft Azure Storage, Minio Cloud Storage, Rackspace Cloud Files,
+Google Cloud Storage, and the Local File System.
+
+Cloud Storage is inspired by `Apache Libcloud <https://libcloud.apache.org/>`_.
+Advantages to Apache Libcloud Storage are:
+
+* Full Python 3 support.
+* Generate temporary signed URLs for downloading and uploading files.
+* Support for request and response headers like Content-Disposition.
+* Pythonic! Iterate through all blobs in containers and all containers in
+  storage using respective objects.
+
+Usage
+=====
+
+.. code-block:: python
+
+    >>> from cloudstorage.drivers.amazon import S3Driver
+    >>> storage = S3Driver(key='<my-aws-access-key-id>', secret='<my-aws-secret-access-key>')
+
+    >>> container = storage.create_container('avatars')
+    >>> container.cdn_url
+    'https://avatars.s3.amazonaws.com/'
+
+    >>> avatar_blob = container.upload_blob('/path/my-avatar.png')
+    >>> avatar_blob.cdn_url
+    'https://s3.amazonaws.com/avatars/my-avatar.png'
+
+    >>> avatar_blob.generate_download_url(expires=3600)
+    'https://avatars.s3.amazonaws.com/my-avatar.png?'
+    'AWSAccessKeyId=<my-aws-access-key-id>'
+    '&Signature=<generated-signature>'
+    '&Expires=1491849102'
+
+    >>> container.generate_upload_url('user-1-avatar.png', expires=3600)
+    {
+        'url': 'https://avatars.s3.amazonaws.com/',
+        'fields': {
+            'key': 'user-1-avatar.png',
+            'AWSAccessKeyId': '<my-aws-access-key-id>',
+            'policy': '<generated-policy>',
+            'signature': '<generated-signature>'
+        }
+    }
+
+Supported Services
+==================
+
+* `Amazon S3`_
+* `Google Cloud Storage`_
+* `Microsoft Azure Storage`_
+* `Minio Cloud Storage`_
+* `Rackspace CloudFiles`_
+* Local File System
+
+
+Installation
+============
+
+To install Cloud Storage:
+
+.. code-block:: bash
+
+    pip install cloudstorage
+
+Also install the storage driver(s) you will be using:
+
+.. code-block:: bash
+
+    pip install cloudstorage[amazon]
+    pip install cloudstorage[google]
+    pip install cloudstorage[local]
+    pip install cloudstorage[microsoft]
+    pip install cloudstorage[minio]
+    pip install cloudstorage[rackspace]
+
+.. _`Amazon S3`: https://aws.amazon.com/s3/
+.. _`Blackblaze B2 Cloud Storage`: https://www.backblaze.com/b2/Cloud-Storage.html
+.. _`Google Cloud Storage`: https://cloud.google.com/storage/
+.. _`Microsoft Azure Storage`: https://azure.microsoft.com/services/storage/
+.. _`Minio Cloud Storage`: https://www.minio.io/
+.. _`Rackspace CloudFiles`: https://www.rackspace.com/cloud/files
+.. _`Cloud Storage`: https://github.com/scottwernervt/cloudstorage/
+
+.. :changelog:
+
+Changelog
+---------
+
+0.9.0 (2018-11-29)
+++++++++++++++++++
+
+Features
+
+* Driver authentication can be verified using ``DriverName.validate_credentials()`` (`#34 <https://github.com/scottwernervt/cloudstorage/issues/34>`_).
+
+Changes from 0.8.0:
+
+* Initializing ``GoogleStorageDriver`` with an invalid credentials file will
+  raise ``CredentialsError`` exception instead of ``CloudStorageError``.
+
+0.8.0 (2018-11-06)
+++++++++++++++++++
+
+Features
+
+* ``Blob`` and ``Container``'s ``meta_data`` is now a case insensitive dictionary.
+* Add new driver for Minio Cloud Storage (`#25 <https://github.com/scottwernervt/cloudstorage/issues/25>`_).
+  Install driver requirements with: ``pip install cloudstorage[minio]``.
+
+Other
+
+* Move to ``src`` folder structure for package.
+
+0.7.0 (2018-10-03)
+++++++++++++++++++
+
+Features
+
+* ``Cache-Control`` supported for Amazon, Google, Local, and Microsoft (`#11 <https://github.com/scottwernervt/cloudstorage/issues/11>`_).
+* Each driver's package dependencies are now optional (`#4 <https://github.com/scottwernervt/cloudstorage/issues/4>`_).
+
+Other
+
+* Remove rackspace package dependency ``rfc6266_parser``.
+* Add ``flake8`` linting and ``sphinx`` doc building to tox and travis.
+
+0.6 (2018-07-24)
+++++++++++++++++
+
+* Copy metadata from ``setup.py`` to ``setup.cfg``
+* Add rate limit timeout when calling google cloud storage backend during tests.
+* Catch ``UnicodeDecodeError`` when decoding local file attribute values.
+* Upgrade dependencies and include ``requirements.txt`` and ``dev-requirements.txt``.
+
+0.5 (2018-02-26)
+++++++++++++++++
+
+* Update rackspacesdk to 0.7.5 and fix broken API calls (`#14 <https://github.com/scottwernervt/cloudstorage/issues/14>`_).
+
+0.4 (2017-08-29)
+++++++++++++++++
+
+* Implement Microsoft Azure Storage driver (`#1 <https://github.com/scottwernervt/cloudstorage/issues/1>`_).
+* Google upload_blob is failing for binary stream (`#7 <https://github.com/scottwernervt/cloudstorage/issues/7>`_ and `#8 <https://github.com/scottwernervt/cloudstorage/issues/8>`_).
+* Fixed type annotations using mypy.
+* Formatted code using flake8 recommendations.
+
+0.3 (2017-05-24)
+++++++++++++++++
+
+* Fixes `#6 <https://github.com/scottwernervt/cloudstorage/issues/6>`_: Add kwargs to each driver's init method.
+
+0.2 (2017-04-21)
+++++++++++++++++
+
+* Add pip cache to travis yml file to speed up tests.
+* Set wheel python-tag to py3 only
+* Set tox to pass all env variables to py.test
+* Add travis repo encrypted env variables for running tests.
+
+0.1 (2017-04-20)
+++++++++++++++++
+
+* First release.
+
