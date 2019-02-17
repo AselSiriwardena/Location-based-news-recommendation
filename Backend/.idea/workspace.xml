@@ -33,11 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NLP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#43#84#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -205,7 +202,7 @@
       <workItem from="1549909528431" duration="387000" />
       <workItem from="1549955009970" duration="4086000" />
       <workItem from="1550415229238" duration="135000" />
-      <workItem from="1550415727424" duration="2041000" />
+      <workItem from="1550415727424" duration="2450000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;M&quot;&#10;&#10;This reverts commit 5e0359ea5dd22a963129872cb140fd022d09c760.">
       <created>1550416422972</created>
@@ -218,10 +215,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6649000" />
+    <option name="totallyTimeSpent" value="7058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17449665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -288,11 +286,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NLP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#43#84#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

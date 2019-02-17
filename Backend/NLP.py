@@ -3,7 +3,12 @@
 from geograpy.extraction import Extractor
 import geograpy
 
+
 import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('maxent_ne_chunker')
+nltk.download('words')
 
 
 text = """Kadawatha Opposition Leader Mahinda Rajapaksa says that the whole  public administration has collapsed due to the constitution council’s arbitrary actions.
