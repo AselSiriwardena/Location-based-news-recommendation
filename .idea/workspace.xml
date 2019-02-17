@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9977ddc-9a6e-4964-89b2-4794f1aa411d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Backend/rss_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/rss_scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,12 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="165">
-                <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <first_editor relative-caret-position="135">
+                <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
               </first_editor>
               <second_editor />
             </state>
@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Backend/rss_scraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="225">
+              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -83,10 +83,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/TestPesh1.py" />
         <option value="$PROJECT_DIR$/Backend/NLP.py" />
         <option value="$PROJECT_DIR$/Backend/rss_scraper.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -227,7 +227,7 @@
       <workItem from="1550384110272" duration="18000" />
       <workItem from="1550387630118" duration="563000" />
       <workItem from="1550388221820" duration="5206000" />
-      <workItem from="1550396215802" duration="2028000" />
+      <workItem from="1550396215802" duration="2111000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit 2">
       <created>1550387669576</created>
@@ -264,21 +264,36 @@
       <option name="project" value="LOCAL" />
       <updated>1550396886279</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Test commit 3">
+      <created>1550398262526</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1550398262526</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Create a loop to get all rss feeds">
+      <created>1550398306911</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1550398306911</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7815000" />
+    <option name="totallyTimeSpent" value="7898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1970" y="-11" width="1317" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26162332" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26162332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30232558" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30232558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -302,19 +317,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test commit 2" />
     <MESSAGE value="Test commit 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test commit 3" />
+    <MESSAGE value="Create a loop to get all rss feeds" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a loop to get all rss feeds" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestPesh1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -357,11 +363,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Backend/rss_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="225">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
