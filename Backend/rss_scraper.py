@@ -25,7 +25,7 @@ while (i<len(feedF['entries'])):
 # print("places - %s" % [str(x) for x in placesInFeed])
 j=0
 while (j<len(feedList)):
-    places = geograpy.get_place_context(text=feedList[j])
+    places = geograpy.get_place_context(text=feedContent[j])
     placesInFeed.append(places.places)
     j=j+1
 
