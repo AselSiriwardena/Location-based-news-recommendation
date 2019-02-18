@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from geograpy.extraction import Extractor
 import geograpy
-from geotext import GeoText
+# from geotext import GeoText
 
 import nltk
 nltk.downloader.download('maxent_ne_chunker')
