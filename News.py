@@ -1,0 +1,4 @@
+class News:
+
+    locations=[]
+    description=""
