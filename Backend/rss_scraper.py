@@ -7,10 +7,13 @@ url = "http://www.adaderana.lk/rss.php"
 
 
 feedF = feedparser.parse( url )
+feedList=[]
 i=0
 while (i<len(feedF['entries'])):
-    print(feedF['entries'][i]['title'])
+    # print(feedF['entries'][i]['title'])
+    feedList.append(feedF['entries'][i]['title'])
+    print("feed"+str(i)+" : "+feedList[i])
     i=i+1
 
-# for i in feedF['entries']._len_():
-#     print(feedF['entries'][i]['title'])
+
+
