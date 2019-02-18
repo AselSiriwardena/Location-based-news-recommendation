@@ -9,11 +9,13 @@ url = "http://www.adaderana.lk/rss.php"
 
 feedF = feedparser.parse( url )
 feedList=[]
+feedContent=[]
 placesInFeed=[[]]
 i=0
 while (i<len(feedF['entries'])):
     # print(feedF['entries'][i]['title'])
     feedList.append(feedF['entries'][i]['title'])
+    feedContent.append(feedF['entries'][i]['summary'])
     print("feed"+str(i)+" : "+feedList[i])
     i=i+1
 
@@ -46,6 +48,7 @@ while (l<len(feedList)):
         if placesInFeed[l][i] == locationName:
             # print("test :" + str(placesInFeed[l][i]))
             print(" News : "+feedList[l-1])
+            print(" Content : "+feedContent[l-1])
             # print("index:"+str(l))
 
         i=i+1
