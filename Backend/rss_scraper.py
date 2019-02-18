@@ -27,7 +27,12 @@ while (j<len(feedList)):
     placesInFeed.append(places.places)
     j=j+1
 
+k=0
+while (k<len(feedList)):
+    print("place "+str(k)+" - %s" % [str(x) for x in placesInFeed[k]])
+    k=k+1
 
-print("places - %s" % [str(x) for x in placesInFeed])
+
+
 # while (i<len(placesInFeed)):
 #     print("places - %s" % [str(x) for x in placesInFeed[i]])
