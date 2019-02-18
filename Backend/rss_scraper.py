@@ -33,6 +33,27 @@ while (k<len(feedList)):
     k=k+1
 
 
+print("############################################################################################################")
+print("############################################################################################################")
+print("############################################################################################################")
+
+locationName = input("Enter your location : ")
+l=0
+while (l<len(feedList)):
+    i=0
+    while (i < len(placesInFeed[l])):
+
+        if placesInFeed[l][i] == locationName:
+            # print("test :" + str(placesInFeed[l][i]))
+            print(" News : "+feedList[l-1])
+            # print("index:"+str(l))
+
+        i=i+1
+    l=l+1
+
+
+
+
 
 # while (i<len(placesInFeed)):
 #     print("places - %s" % [str(x) for x in placesInFeed[i]])

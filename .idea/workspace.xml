@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9977ddc-9a6e-4964-89b2-4794f1aa411d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/rss_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/rss_scraper.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Location_based_news_reccomendation$TestPesh1.coverage" NAME="TestPesh1 Coverage Results" MODIFIED="1550388566917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Location_based_news_reccomendation$rss_scraper.coverage" NAME="rss_scraper Coverage Results" MODIFIED="1550505480081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Backend" />
+    <SUITE FILE_PATH="coverage/Location_based_news_reccomendation$rss_scraper.coverage" NAME="rss_scraper Coverage Results" MODIFIED="1550509675084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Backend" />
     <SUITE FILE_PATH="coverage/Location_based_news_reccomendation$NLP.coverage" NAME="NLP Coverage Results" MODIFIED="1550473676035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Backend" />
   </component>
   <component name="DatabaseView">
@@ -34,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Backend/rss_scraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+            <state relative-caret-position="116">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -245,7 +246,7 @@
       <workItem from="1550425532587" duration="3378000" />
       <workItem from="1550429697114" duration="1297000" />
       <workItem from="1550468872960" duration="3319000" />
-      <workItem from="1550504736257" duration="762000" />
+      <workItem from="1550504736257" duration="4437000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit 2">
       <created>1550387669576</created>
@@ -317,11 +318,32 @@
       <option name="project" value="LOCAL" />
       <updated>1550504775339</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="replacing places.py">
+      <created>1550505502595</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1550505502595</updated>
+    </task>
+    <task id="LOCAL-00012" summary="get locations to 2D array">
+      <created>1550505548604</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1550505548604</updated>
+    </task>
+    <task id="LOCAL-00013" summary="get locations to 2D array part2">
+      <created>1550506545613</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1550506545613</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20197000" />
+    <option name="totallyTimeSpent" value="23872000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -334,14 +356,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="-4" width="1869" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15469007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18495297" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3354232" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -368,7 +389,9 @@
     <MESSAGE value="Create a loop to get all rss feeds" />
     <MESSAGE value="replacing with url" />
     <MESSAGE value="replacing places.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="replacing places.py" />
+    <MESSAGE value="get locations to 2D array" />
+    <MESSAGE value="get locations to 2D array part2" />
+    <option name="LAST_COMMIT_MESSAGE" value="get locations to 2D array part2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/TestPesh1.py" />
@@ -438,8 +461,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Backend/rss_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        <state relative-caret-position="116">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
