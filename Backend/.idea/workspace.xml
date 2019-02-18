@@ -12,7 +12,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Location_based_news_reccomendation_Backend$rss_scraper.coverage" NAME="rss_scraper Coverage Results" MODIFIED="1549955938087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Backend$rss_scraper.coverage" NAME="rss_scraper Coverage Results" MODIFIED="1550494989651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Backend$rss_scraper.coverage" NAME="rss_scraper Coverage Results" MODIFIED="1550496423391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Backend$RssFeed.coverage" NAME="RssFeed Coverage Results" MODIFIED="1550494001871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Backend$NLP.coverage" NAME="NLP Coverage Results" MODIFIED="1550417886185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -22,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/rss_scraper.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -198,7 +198,7 @@
       <workItem from="1549955009970" duration="4086000" />
       <workItem from="1550415229238" duration="135000" />
       <workItem from="1550415727424" duration="2450000" />
-      <workItem from="1550493979643" duration="1022000" />
+      <workItem from="1550493979643" duration="2451000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;M&quot;&#10;&#10;This reverts commit 5e0359ea5dd22a963129872cb140fd022d09c760.">
       <created>1550416422972</created>
@@ -211,17 +211,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8080000" />
+    <option name="totallyTimeSpent" value="9509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17718121" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.07507082" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28470254" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -284,7 +285,7 @@
     <entry file="file://$PROJECT_DIR$/rss_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
