@@ -4,13 +4,13 @@ import geograpy
 
 # url = "http://www.hirunews.lk/rss/english.xml"
 # url = "http://fe1.virakesari.lk/feed" #getting another language RSS feed
+#"http://www.thesundayleader.lk/feed/",
+           #"http://www.dinamina.lk/rss.xml",
 feedURL = ["http://www.adaderana.lk/rss.php",
            "http://www.hirunews.lk/rss/english.xml",
            "http://www.gossiplankahotnews.com/feeds/posts/default/-/Hotnews",
            "https://www.news.lk/news?format=feed",
            "https://srilankamirror.com/news?format=feed&type=rss",
-           #"http://www.thesundayleader.lk/feed/",
-           #"http://www.dinamina.lk/rss.xml",
            "https://www.newsfirst.lk/feed/"
            ]
 
@@ -18,27 +18,66 @@ feedTitle = []
 feedContent = []
 placesInFeed = [[]]
 feedCount = 0
-entityCount = 0
 
-while (feedCount<len(feedURL)):
+
+
+# feedF = feedparser.parse(feedURL[1])
+# while (feedCount<len(feedF['entries'])):
+#     print(feedURL[1])
+#
+#     feedTitle.append(feedF['entries'][feedCount]['title'])
+#     feedContent.append(feedF['entries'][feedCount]['summary'])
+#     print("feed" + str(feedCount) + " : " + feedTitle[feedCount])
+#     #
+#     # while (entityCount < len(feedF['entries'])):
+#     #     # print(feedF['entries'][i]['title'])
+#     #     feedTitle.append(feedF['entries'][entityCount]['title'])
+#     #     feedContent.append(feedF['entries'][entityCount]['summary'])
+#     #     print("feed" + str(entityCount) + " : " + feedTitle[entityCount])
+#     #     entityCount = entityCount + 1
+#     feedCount = feedCount+1
+# #
+
+feedList=[]
+count1 = 0
+countx = 0
+while feedCount < len(feedURL):
     print(feedURL[feedCount])
     feedF = feedparser.parse(feedURL[feedCount])
+    print("count1:" + str(count1))
 
-    while (entityCount < len(feedF['entries'])):
+
+    count1 = count1+len(feedF['entries'])
+
+    entityCount = 0
+
+    while entityCount < len(feedF['entries']):
         # print(feedF['entries'][i]['title'])
         feedTitle.append(feedF['entries'][entityCount]['title'])
         feedContent.append(feedF['entries'][entityCount]['summary'])
-        print("feed" + str(entityCount) + " : " + feedTitle[entityCount])
+        print("feed" + str(countx) + " : " + feedTitle[countx])
+        #print("feedConent:len: " + str(countx) + " " + feedContent[countx])
         entityCount = entityCount + 1
+        countx=countx+1
+        print("feedLen:" + str(len(feedF['entries'])))
+        print("entitycount:" + str(entityCount))
     feedCount = feedCount+1
 #
 # places = geograpy.get_place_context(text=feedList[1])
 # placesInFeed.append(places.places)
 # print("places - %s" % [str(x) for x in placesInFeed])
+
+print("feedTitleLen:" + str(len(feedTitle)))
+print("feedConLen:" + str(len(feedContent)))
+print("feedConent:" +feedContent[89])
 j = 0
 while (j < len(feedTitle)):
-    places = geograpy.get_place_context(text=feedContent[j])
-    placesInFeed.append(places.places)
+    print("feedConent:len: "+str(j)+" " + feedContent[j])
+    if feedContent[j] != "":
+        places = geograpy.get_place_context(text=feedContent[j])
+        placesInFeed.append(places.places)
+    else:
+        placesInFeed.append("none")
     j = j + 1
 
 k = 0
