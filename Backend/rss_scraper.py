@@ -5,7 +5,7 @@ import geograpy
 # url = "http://www.hirunews.lk/rss/english.xml"
 # url = "http://fe1.virakesari.lk/feed" #getting another language RSS feed
 url = ["http://www.adaderana.lk/rss.php",
-       "http://www.hirunews.lk/rss/english.xml",
+       #"http://www.hirunews.lk/rss/english.xml",
        #"http://www.gossiplankahotnews.com/feeds/posts/default/-/Hotnews",
        #"https://www.news.lk/news?format=feed",
        # "https://srilankamirror.com/news?format=feed&type=rss",
@@ -17,14 +17,13 @@ url = ["http://www.adaderana.lk/rss.php",
 feedTitle = []
 feedContent = []
 placesInFeed = [[]]
-entityCount = 0
+entityCount = 1
 
 for url in url:
     print(url)
-    feedF = feedparser.parse(url)
+    feedParsed = feedparser.parse(url)
 
-    for post in feedF.entries:
-        # print(feedF['entries'][i]['title'])
+    for post in feedParsed.entries:
         feedTitle.append(post.title)
         feedContent.append(post.summary)
         print("feed " + str(entityCount) + " : " + post.title)
@@ -33,14 +32,13 @@ for url in url:
 # places = geograpy.get_place_context(text=feedList[1])
 # placesInFeed.append(places.places)
 # print("places - %s" % [str(x) for x in placesInFeed])
-
 for content in feedContent:
-    places = geograpy.get_place_context(text=content)
-    placesInFeed.append(places.places)
+    place = geograpy.get_place_context(text=content)
+    placesInFeed.append(place.places)
 
-k=0
-for places in placesInFeed:
-    print("place " + str(k) + " - %s" % str(places))
+k=1
+for place in placesInFeed:
+    print("place " + str(k) + " - %s" % str(place))
     k = k + 1
 
 print("############################################################################################################")
@@ -49,9 +47,9 @@ print("#########################################################################
 
 locationName = input("Enter your location : ")
 l = 0
-while (l < len(feedTitle)):
+while l < len(feedTitle):
     entityCount = 0
-    while (entityCount < len(placesInFeed[l])):
+    while entityCount < len(placesInFeed[l]):
 
         if placesInFeed[l][entityCount] == locationName:
             # print("test :" + str(placesInFeed[l][i]))
