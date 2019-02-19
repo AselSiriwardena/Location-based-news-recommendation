@@ -4,33 +4,33 @@ import geograpy
 
 # url = "http://www.hirunews.lk/rss/english.xml"
 # url = "http://fe1.virakesari.lk/feed" #getting another language RSS feed
-feedURL = ["http://www.adaderana.lk/rss.php",
+feedURL = ["https://www.newsfirst.lk/feed/",
+           "http://www.adaderana.lk/rss.php",
            "http://www.hirunews.lk/rss/english.xml",
            "http://www.gossiplankahotnews.com/feeds/posts/default/-/Hotnews",
            "https://www.news.lk/news?format=feed",
            "https://srilankamirror.com/news?format=feed&type=rss",
-           #"http://www.thesundayleader.lk/feed/",
-           #"http://www.dinamina.lk/rss.xml",
-           "https://www.newsfirst.lk/feed/"
+           "http://www.thesundayleader.lk/feed/",
+           "http://www.dinamina.lk/rss.xml",
            ]
 
 feedTitle = []
 feedContent = []
 placesInFeed = [[]]
-feedCount = 0
+sourceCount = 0
 entityCount = 0
 
-while (feedCount<len(feedURL)):
-    print(feedURL[feedCount])
-    feedF = feedparser.parse(feedURL[feedCount])
+while (sourceCount < len(feedURL)):
+    print(feedURL[sourceCount])
+    feedF = feedparser.parse(feedURL[sourceCount])
 
-    while (entityCount < len(feedF['entries'])):
+    for post in feedF.entries:
         # print(feedF['entries'][i]['title'])
-        feedTitle.append(feedF['entries'][entityCount]['title'])
-        feedContent.append(feedF['entries'][entityCount]['summary'])
-        print("feed" + str(entityCount) + " : " + feedTitle[entityCount])
-        entityCount = entityCount + 1
-    feedCount = feedCount+1
+        feedTitle.append(post.title)
+        feedContent.append(post.summary)
+        print("feed" + str(entityCount) + " : " + post.title)
+        entityCount = entityCount+1
+    sourceCount = sourceCount + 1
 #
 # places = geograpy.get_place_context(text=feedList[1])
 # placesInFeed.append(places.places)
