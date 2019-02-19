@@ -4,46 +4,43 @@ import geograpy
 
 # url = "http://www.hirunews.lk/rss/english.xml"
 # url = "http://fe1.virakesari.lk/feed" #getting another language RSS feed
-feedURL = ["https://www.newsfirst.lk/feed/",
-           "http://www.adaderana.lk/rss.php",
-           "http://www.hirunews.lk/rss/english.xml",
-           "http://www.gossiplankahotnews.com/feeds/posts/default/-/Hotnews",
-           "https://www.news.lk/news?format=feed",
-           "https://srilankamirror.com/news?format=feed&type=rss",
-           "http://www.thesundayleader.lk/feed/",
-           "http://www.dinamina.lk/rss.xml",
-           ]
+url = ["http://www.adaderana.lk/rss.php",
+       "http://www.hirunews.lk/rss/english.xml",
+       #"http://www.gossiplankahotnews.com/feeds/posts/default/-/Hotnews",
+       #"https://www.news.lk/news?format=feed",
+       # "https://srilankamirror.com/news?format=feed&type=rss",
+       # "http://www.thesundayleader.lk/feed/",
+       # "http://www.dinamina.lk/rss.xml",
+       # "https://www.newsfirst.lk/feed/",
+       ]
 
 feedTitle = []
 feedContent = []
 placesInFeed = [[]]
-sourceCount = 0
 entityCount = 0
 
-while (sourceCount < len(feedURL)):
-    print(feedURL[sourceCount])
-    feedF = feedparser.parse(feedURL[sourceCount])
+for url in url:
+    print(url)
+    feedF = feedparser.parse(url)
 
     for post in feedF.entries:
         # print(feedF['entries'][i]['title'])
         feedTitle.append(post.title)
         feedContent.append(post.summary)
-        print("feed" + str(entityCount) + " : " + post.title)
-        entityCount = entityCount+1
-    sourceCount = sourceCount + 1
-#
+        print("feed " + str(entityCount) + " : " + post.title)
+        entityCount = entityCount + 1
+
 # places = geograpy.get_place_context(text=feedList[1])
 # placesInFeed.append(places.places)
 # print("places - %s" % [str(x) for x in placesInFeed])
-j = 0
-while (j < len(feedTitle)):
-    places = geograpy.get_place_context(text=feedContent[j])
-    placesInFeed.append(places.places)
-    j = j + 1
 
-k = 0
-while (k < len(feedTitle)):
-    print("place " + str(k) + " - %s" % [str(x) for x in placesInFeed[k]])
+for content in feedContent:
+    places = geograpy.get_place_context(text=content)
+    placesInFeed.append(places.places)
+
+k=0
+for places in placesInFeed:
+    print("place " + str(k) + " - %s" % str(places))
     k = k + 1
 
 print("############################################################################################################")
