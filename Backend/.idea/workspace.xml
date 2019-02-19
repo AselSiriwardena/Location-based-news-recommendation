@@ -128,9 +128,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="RssFeed" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="NewsFeed" />
@@ -150,9 +147,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="rss_scraper" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="NewsFeed" />
@@ -172,10 +166,12 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.RssFeed" />
+      <item itemvalue="Python.NLP" />
+      <item itemvalue="Python.rss_scraper" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.rss_scraper" />
