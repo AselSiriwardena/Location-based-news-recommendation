@@ -5,13 +5,13 @@ import geograpy
 # url = "http://www.hirunews.lk/rss/english.xml"
 # url = "http://fe1.virakesari.lk/feed" #getting another language RSS feed
 url = ["http://www.adaderana.lk/rss.php",
-       #"http://www.hirunews.lk/rss/english.xml",
-       #"http://www.gossiplankahotnews.com/feeds/posts/default/-/Hotnews",
-       #"https://www.news.lk/news?format=feed",
-       # "https://srilankamirror.com/news?format=feed&type=rss",
-       # "http://www.thesundayleader.lk/feed/",
-       # "http://www.dinamina.lk/rss.xml",
-       # "https://www.newsfirst.lk/feed/",
+       "http://www.hirunews.lk/rss/english.xml",
+       "http://www.gossiplankahotnews.com/feeds/posts/default/-/Hotnews",
+       "https://www.news.lk/news?format=feed",
+       "https://srilankamirror.com/news?format=feed&type=rss",
+       "http://www.thesundayleader.lk/feed/",
+       "http://www.dinamina.lk/rss.xml",
+       "https://www.newsfirst.lk/feed/",
        ]
 
 feedTitle = []
@@ -33,8 +33,13 @@ for url in url:
 # placesInFeed.append(places.places)
 # print("places - %s" % [str(x) for x in placesInFeed])
 for content in feedContent:
-    place = geograpy.get_place_context(text=content)
-    placesInFeed.append(place.places)
+
+    if content!="":
+        place = geograpy.get_place_context(text=content)
+        placesInFeed.append(place.places)
+
+    else:
+        placesInFeed.append("null")
 
 k=1
 for place in placesInFeed:
