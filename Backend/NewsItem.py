@@ -6,5 +6,8 @@ class NewsItem:
         self.img = img
         self.PubDate = date
 
-    def get_data(self):
+    def get_data_all(self):
         return self.title, self.content, self.link, self.img, self.date
+
+    def get_data_for_tile(self):
+        return self.title, self.img, self.date
