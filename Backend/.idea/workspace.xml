@@ -2,7 +2,586 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="319e924c-de23-4407-ad76-59af9e617d3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/NewsItem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rss_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/rss_scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/AES.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/AES.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/AES.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/AES.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ARC2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ARC2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ARC2.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ARC2.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ARC4.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ARC4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ARC4.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ARC4.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/Blowfish.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/Blowfish.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/Blowfish.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/Blowfish.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/CAST.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/CAST.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/CAST.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/CAST.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ChaCha20.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ChaCha20.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ChaCha20.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ChaCha20.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ChaCha20_Poly1305.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ChaCha20_Poly1305.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ChaCha20_Poly1305.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/ChaCha20_Poly1305.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/DES.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/DES.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/DES.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/DES.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/DES3.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/DES3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/DES3.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/DES3.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/PKCS1_OAEP.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/PKCS1_OAEP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/PKCS1_OAEP.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/PKCS1_OAEP.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/PKCS1_v1_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/PKCS1_v1_5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/PKCS1_v1_5.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/PKCS1_v1_5.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/Salsa20.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/Salsa20.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/Salsa20.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/Salsa20.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_cbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_cbc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_cbc.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_cbc.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ccm.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ccm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ccm.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ccm.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_cfb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_cfb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_cfb.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_cfb.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ctr.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ctr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ctr.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ctr.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_eax.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_eax.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_eax.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_eax.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ecb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ecb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ecb.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ecb.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_gcm.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_gcm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_gcm.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_gcm.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ocb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ocb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ocb.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ocb.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ofb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ofb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ofb.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_ofb.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_openpgp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_openpgp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_openpgp.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_openpgp.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_siv.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_siv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_siv.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Cipher/_mode_siv.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/BLAKE2b.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/BLAKE2b.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/BLAKE2b.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/BLAKE2b.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/BLAKE2s.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/BLAKE2s.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/BLAKE2s.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/BLAKE2s.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/CMAC.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/CMAC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/CMAC.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/CMAC.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/HMAC.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/HMAC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/HMAC.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/HMAC.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/MD2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/MD2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/MD2.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/MD2.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/MD4.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/MD4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/MD4.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/MD4.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/MD5.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/MD5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/MD5.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/MD5.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/Poly1305.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/Poly1305.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/Poly1305.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/Poly1305.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/RIPEMD.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/RIPEMD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/RIPEMD.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/RIPEMD.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/RIPEMD160.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/RIPEMD160.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/RIPEMD160.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/RIPEMD160.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA1.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA1.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA1.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA224.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA224.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA224.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA224.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA256.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA256.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA256.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA256.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA384.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA384.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA384.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA384.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_224.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_224.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_224.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_224.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_256.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_256.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_256.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_256.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_384.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_384.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_384.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_384.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_512.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_512.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_512.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA3_512.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA512.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA512.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA512.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHA512.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHAKE128.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHAKE128.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHAKE128.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHAKE128.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHAKE256.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHAKE256.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHAKE256.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/SHAKE256.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/keccak.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/keccak.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/keccak.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Hash/keccak.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/PEM.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/PEM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/PEM.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/PEM.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/PKCS8.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/PKCS8.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/PKCS8.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/PKCS8.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/_PBES.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/_PBES.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/_PBES.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/_PBES.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/IO/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/Numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/Numbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/Numbers.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/Numbers.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/Primality.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/Primality.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/Primality.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/Primality.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerBase.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerBase.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerCustom.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerCustom.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerCustom.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerCustom.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerGMP.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerGMP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerGMP.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerGMP.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerNative.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerNative.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerNative.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Math/_IntegerNative.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Protocol/KDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Protocol/KDF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Protocol/KDF.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Protocol/KDF.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Protocol/SecretSharing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Protocol/SecretSharing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Protocol/SecretSharing.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Protocol/SecretSharing.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Protocol/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Protocol/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Protocol/__init__.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Protocol/__init__.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/DSA.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/DSA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/DSA.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/DSA.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/ECC.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/ECC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/ECC.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/ECC.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/ElGamal.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/ElGamal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/ElGamal.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/ElGamal.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/RSA.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/RSA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/RSA.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/RSA.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/PublicKey/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Random/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Random/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Random/__init__.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Random/__init__.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Random/random.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Random/random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Random/random.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Random/random.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_AES.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_AES.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_ARC2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_ARC2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_ARC4.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_ARC4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_Blowfish.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_Blowfish.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_CAST.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_CAST.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_CBC.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_CBC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_CCM.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_CCM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_CFB.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_CFB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_CTR.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_CTR.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_ChaCha20.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_ChaCha20.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_ChaCha20_Poly1305.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_ChaCha20_Poly1305.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_DES.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_DES.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_DES3.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_DES3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_EAX.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_EAX.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_GCM.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_GCM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_OCB.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_OCB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_OFB.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_OFB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_OpenPGP.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_OpenPGP.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_SIV.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_SIV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_Salsa20.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_Salsa20.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_pkcs1_15.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_pkcs1_15.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_pkcs1_oaep.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_pkcs1_oaep.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_vectors/wycheproof/aes_eax_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_vectors/wycheproof/aes_eax_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_vectors/wycheproof/aes_gcm_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_vectors/wycheproof/aes_gcm_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_vectors/wycheproof/aes_siv_cmac_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_vectors/wycheproof/aes_siv_cmac_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_vectors/wycheproof/chacha20_poly1305_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Cipher/test_vectors/wycheproof/chacha20_poly1305_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_BLAKE2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_BLAKE2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_CMAC.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_CMAC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_HMAC.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_HMAC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_MD2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_MD2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_MD4.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_MD4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_MD5.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_MD5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_Poly1305.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_Poly1305.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_RIPEMD160.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_RIPEMD160.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA1.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA224.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA224.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA256.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA256.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA384.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA384.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA3_224.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA3_224.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA3_256.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA3_256.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA3_384.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA3_384.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA3_512.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA3_512.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA512.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHA512.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHAKE.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_SHAKE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_keccak.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_keccak.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/BLAKE2b/blake2b-test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/BLAKE2b/blake2b-test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/BLAKE2b/tv1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/BLAKE2b/tv1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/BLAKE2b/tv2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/BLAKE2b/tv2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/BLAKE2s/blake2s-test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/BLAKE2s/blake2s-test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/BLAKE2s/tv1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/BLAKE2s/tv1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/BLAKE2s/tv2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/BLAKE2s/tv2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA3/ShortMsgKAT_SHA3-224.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA3/ShortMsgKAT_SHA3-224.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA3/ShortMsgKAT_SHA3-256.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA3/ShortMsgKAT_SHA3-256.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA3/ShortMsgKAT_SHA3-384.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA3/ShortMsgKAT_SHA3-384.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA3/ShortMsgKAT_SHA3-512.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA3/ShortMsgKAT_SHA3-512.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA3/ShortMsgKAT_SHAKE128.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA3/ShortMsgKAT_SHAKE128.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA3/ShortMsgKAT_SHAKE256.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/SHA3/ShortMsgKAT_SHAKE256.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ExtremelyLongMsgKAT_224.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ExtremelyLongMsgKAT_224.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ExtremelyLongMsgKAT_256.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ExtremelyLongMsgKAT_256.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ExtremelyLongMsgKAT_384.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ExtremelyLongMsgKAT_384.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ExtremelyLongMsgKAT_512.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ExtremelyLongMsgKAT_512.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/LongMsgKAT_224.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/LongMsgKAT_224.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/LongMsgKAT_256.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/LongMsgKAT_256.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/LongMsgKAT_384.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/LongMsgKAT_384.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/LongMsgKAT_512.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/LongMsgKAT_512.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ShortMsgKAT_224.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ShortMsgKAT_224.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ShortMsgKAT_256.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ShortMsgKAT_256.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ShortMsgKAT_384.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ShortMsgKAT_384.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ShortMsgKAT_512.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/ShortMsgKAT_512.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/keccak/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/wycheproof/aes_cmac_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Hash/test_vectors/wycheproof/aes_cmac_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/IO/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/IO/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/IO/test_PBES.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/IO/test_PBES.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/IO/test_PKCS8.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/IO/test_PKCS8.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Math/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Math/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Math/test_Numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Math/test_Numbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Math/test_Primality.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Math/test_Primality.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Math/test_modexp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Math/test_modexp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Protocol/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Protocol/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Protocol/test_KDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Protocol/test_KDF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Protocol/test_SecretSharing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Protocol/test_SecretSharing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Protocol/test_rfc1751.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Protocol/test_rfc1751.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_DSA.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_DSA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_ECC.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_ECC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_ElGamal.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_ElGamal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_RSA.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_RSA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_import_DSA.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_import_DSA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_import_ECC.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_import_ECC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_import_RSA.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_import_RSA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private.pem" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private_enc_aes128.pem" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private_enc_aes128.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private_enc_aes192.pem" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private_enc_aes192.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private_enc_aes256_gcm.pem" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private_enc_aes256_gcm.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private_enc_des3.pem" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private_enc_des3.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private_p8.pem" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private_p8.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private_p8_clear.pem" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_private_p8_clear.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_public.pem" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_public.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_public_compressed.pem" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_public_compressed.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_public_openssh.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_public_openssh.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_x509.pem" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/ecc_p256_x509.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/gen_ecc_p256.sh" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/gen_ecc_p256.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/openssl_version.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/openssl_version.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/point-at-infinity.org-P256.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/PublicKey/test_vectors/ECC/point-at-infinity.org-P256.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Random/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Random/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Random/test_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Random/test_random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_dss.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_dss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_pkcs1_15.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_pkcs1_15.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_pss.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_pss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_vectors/ECDSA/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_vectors/ECDSA/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_vectors/wycheproof/dsa_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_vectors/wycheproof/dsa_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_vectors/wycheproof/ecdsa_secp256r1_sha256_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_vectors/wycheproof/ecdsa_secp256r1_sha256_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_vectors/wycheproof/ecdsa_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_vectors/wycheproof/ecdsa_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_vectors/wycheproof/rsa_signature_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Signature/test_vectors/wycheproof/rsa_signature_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Util/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Util/test_Counter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Util/test_Counter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Util/test_Padding.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Util/test_Padding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Util/test_asn1.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Util/test_asn1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Util/test_number.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Util/test_number.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Util/test_strxor.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/Util/test_strxor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/st_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/SelfTest/st_common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/DSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/DSS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/DSS.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/DSS.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/PKCS1_PSS.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/PKCS1_PSS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/PKCS1_PSS.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/PKCS1_PSS.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/PKCS1_v1_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/PKCS1_v1_5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/PKCS1_v1_5.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/PKCS1_v1_5.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/pkcs1_15.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/pkcs1_15.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/pkcs1_15.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/pkcs1_15.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/pss.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/pss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/pss.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Signature/pss.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/Counter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/Counter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/Counter.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/Counter.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/Padding.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/Padding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/Padding.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/Padding.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/RFC1751.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/RFC1751.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/RFC1751.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/RFC1751.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/_cpu_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/_cpu_features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/_cpu_features.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/_cpu_features.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/_file_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/_file_system.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/_file_system.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/_file_system.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/_raw_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/_raw_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/_raw_api.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/_raw_api.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/asn1.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/asn1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/asn1.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/asn1.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/number.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/number.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/number.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/number.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/py3compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/py3compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/py3compat.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/py3compat.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/strxor.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/strxor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/strxor.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/Util/strxor.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/__init__.pyi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Crypto/__init__.pyi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud-0.18.3-py3.6.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud-0.18.3-py3.6.egg-info/SOURCES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud-0.18.3-py3.6.egg-info/dependency_links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud-0.18.3-py3.6.egg-info/dependency_links.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud-0.18.3-py3.6.egg-info/installed-files.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud-0.18.3-py3.6.egg-info/installed-files.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud-0.18.3-py3.6.egg-info/not-zip-safe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud-0.18.3-py3.6.egg-info/not-zip-safe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud-0.18.3-py3.6.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud-0.18.3-py3.6.egg-info/requires.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud-0.18.3-py3.6.egg-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud-0.18.3-py3.6.egg-info/top_level.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/_testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/job.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/job.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test__helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test__helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test_job.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test_job.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigquery/test_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_bigtable.proto" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_bigtable.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_bigtable_instance_admin.proto" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_bigtable_instance_admin.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_bigtable_table_admin.proto" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_bigtable_table_admin.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_common.proto" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_common.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_data.proto" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_data.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_instance.proto" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_instance.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_operations.proto" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_operations.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_table.proto" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/_table.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/bigtable_instance_admin_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/bigtable_instance_admin_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/bigtable_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/bigtable_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/bigtable_table_admin_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/bigtable_table_admin_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/common_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/common_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/data_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/data_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/instance_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/instance_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/operations_grpc_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/operations_grpc_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/table_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_generated/table_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/_testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/cluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/column_family.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/column_family.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/batch.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/batch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/pool.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/pool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/test_batch.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/test_batch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/test_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/test_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/test_pool.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/test_pool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/test_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/happybase/test_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/instance.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/instance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/read-rows-acceptance-test.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/read-rows-acceptance-test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/row.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/row.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/row_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/row_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/row_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/row_filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_cluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_column_family.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_column_family.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_instance.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_instance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_row.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_row.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_row_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_row_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_row_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_row_filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/bigtable/test_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/credentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/credentials.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/_datastore.proto" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/_datastore.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/_entity.proto" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/_entity.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/_query.proto" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/_query.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/datastore_grpc_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/datastore_grpc_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/datastore_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/datastore_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/entity_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/entity_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/query_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/_generated/query_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/batch.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/batch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/key.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/key.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_batch.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_batch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_key.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/test_transaction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/datastore/transaction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/changes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/changes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/resource_record_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/resource_record_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/test_changes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/test_changes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/test_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/test_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/test_resource_record_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/test_resource_record_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/test_zone.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/test_zone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/zone.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/dns/zone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/environment_vars.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/environment_vars.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/error_reporting/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/error_reporting/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/error_reporting/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/error_reporting/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/error_reporting/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/error_reporting/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/iterator.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/iterator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/_gax.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/_gax.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/entries.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/entries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/metric.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/metric.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/sink.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/sink.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test__gax.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test__gax.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test_entries.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test_entries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test_logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test_metric.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test_metric.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test_sink.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/logging/test_sink.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/_dataframe.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/_dataframe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/label.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/metric.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/metric.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test__dataframe.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test__dataframe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_label.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_metric.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_metric.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_timeseries.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/test_timeseries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/timeseries.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/monitoring/timeseries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/_gax.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/_gax.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/iam.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/iam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/message.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/subscription.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/subscription.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test__gax.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test__gax.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test__helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test__helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test_iam.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test_iam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test_message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test_subscription.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test_subscription.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test_topic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/test_topic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/topic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/pubsub/topic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/test_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/test_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/test_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/resource_manager/test_project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/acl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/acl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/batch.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/batch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/blob.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/blob.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/bucket.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/bucket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test__helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test__helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test_acl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test_acl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test_batch.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test_batch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test_blob.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test_blob.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test_bucket.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test_bucket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/storage/test_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/buffered_stream.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/buffered_stream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/http_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/http_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/stream_slice.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/stream_slice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/test_buffered_stream.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/test_buffered_stream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/test_exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/test_exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/test_http_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/test_http_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/test_stream_slice.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/test_stream_slice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/test_transfer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/test_transfer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/test_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/test_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/transfer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/transfer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/streaming/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/test__helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/test__helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/test_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/test_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/test_credentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/test_credentials.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/test_exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/test_exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/test_iterator.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/test_iterator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/translate/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/translate/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/translate/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/translate/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/translate/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/translate/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/translate/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/translate/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/translate/test_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gcloud/translate/test_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client-4.1.3.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client-4.1.3.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client-4.1.3.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client-4.1.3.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client-4.1.3.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/_openssl_crypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/_openssl_crypt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/_pkce.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/_pkce.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/_pure_python_crypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/_pure_python_crypt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/_pycrypto_crypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/_pycrypto_crypt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/clientsecrets.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/clientsecrets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/_appengine_ndb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/_appengine_ndb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/_metadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/_metadata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/appengine.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/appengine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/devshell.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/devshell.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/dictionary_storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/dictionary_storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/site.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/site.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/django_util/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/flask_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/flask_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/gce.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/gce.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/keyring_storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/keyring_storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/multiprocess_file_storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/multiprocess_file_storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/sqlalchemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/sqlalchemy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/xsrfutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/contrib/xsrfutil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/crypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/crypt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/file.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/service_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/service_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/transport.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/oauth2client/transport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pycryptodome-3.7.3.dist-info/AUTHORS.rst" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pycryptodome-3.7.3.dist-info/AUTHORS.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pycryptodome-3.7.3.dist-info/INSTALLER" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pycryptodome-3.7.3.dist-info/INSTALLER" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pycryptodome-3.7.3.dist-info/LICENSE.rst" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pycryptodome-3.7.3.dist-info/LICENSE.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pycryptodome-3.7.3.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pycryptodome-3.7.3.dist-info/METADATA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pycryptodome-3.7.3.dist-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pycryptodome-3.7.3.dist-info/top_level.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_jwt-3.2.4.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_jwt-3.2.4.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_jwt-3.2.4.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_jwt-3.2.4.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_jwt-3.2.4.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_jwt/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/python_jwt/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests-2.21.0.dist-info/INSTALLER" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests-2.21.0.dist-info/INSTALLER" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests-2.21.0.dist-info/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests-2.21.0.dist-info/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests-2.21.0.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests-2.21.0.dist-info/METADATA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests-2.21.0.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests-2.21.0.dist-info/WHEEL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests-2.21.0.dist-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests-2.21.0.dist-info/top_level.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/__version__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/__version__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/_internal_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/_internal_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/adapters.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/adapters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/certs.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/certs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/cookies.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/cookies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/help.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/hooks.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/hooks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/packages.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/packages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/sessions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/sessions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/status_codes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/status_codes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/structures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,20 +613,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FirebasePyth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+            <state relative-caret-position="34">
+              <caret line="2" column="15" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rss_scraper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rss_scraper.py">
+        <entry file="file://$PROJECT_DIR$/NewsItem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -94,7 +682,9 @@
         <option value="$PROJECT_DIR$/Untitled.ipynb" />
         <option value="$PROJECT_DIR$/NLP.py" />
         <option value="$PROJECT_DIR$/DataSetCreator.py" />
+        <option value="$PROJECT_DIR$/NewsItem.py" />
         <option value="$PROJECT_DIR$/rss_scraper.py" />
+        <option value="$PROJECT_DIR$/FirebasePyth.py" />
       </list>
     </option>
   </component>
@@ -262,7 +852,7 @@
       <workItem from="1550586116482" duration="2356000" />
       <workItem from="1550670031190" duration="72000" />
       <workItem from="1550671755045" duration="599000" />
-      <workItem from="1550763069972" duration="1675000" />
+      <workItem from="1550763069972" duration="3325000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;M&quot;&#10;&#10;This reverts commit 5e0359ea5dd22a963129872cb140fd022d09c760.">
       <created>1550416422972</created>
@@ -275,17 +865,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16057000" />
+    <option name="totallyTimeSpent" value="17707000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23892617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17705382" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17705382" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -294,7 +885,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.25354108" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -368,13 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FirebasePyth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RssFeed.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -397,11 +981,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rss_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        <state relative-caret-position="544">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FirebasePyth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewsItem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
         </state>
       </provider>
     </entry>

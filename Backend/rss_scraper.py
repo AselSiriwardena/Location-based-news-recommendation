@@ -1,6 +1,8 @@
 import feedparser
 import json
 import geograpy
+import NewsItem
+
 
 
 # url = "http://www.hirunews.lk/rss/english.xml"
@@ -74,6 +76,8 @@ class RssScraper:
 
     if not isFound:
         print("No matching articles")
+
+
 
 # while (i<len(placesInFeed)):
 #     print("places - %s" % [str(x) for x in placesInFeed[i]])
