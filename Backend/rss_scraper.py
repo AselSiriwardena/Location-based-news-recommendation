@@ -2,8 +2,7 @@ import feedparser
 import json
 import geograpy
 import NewsItem
-
-
+import FirebasePyth
 
 # url = "http://www.hirunews.lk/rss/english.xml"
 # url = "http://fe1.virakesari.lk/feed" #getting another language RSS feed
