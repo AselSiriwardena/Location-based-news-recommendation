@@ -9,10 +9,10 @@ import geograpy
 
 class RssScraper:
     url = ["http://www.adaderana.lk/rss.php",
-           "http://www.hirunews.lk/rss/english.xml",
-           "https://www.news.lk/news?format=feed",
-           "https://srilankamirror.com/news?format=feed&type=rss",
-           "http://www.thesundayleader.lk/feed/"
+           #"http://www.hirunews.lk/rss/english.xml",
+           #"https://www.news.lk/news?format=feed",
+           #"https://srilankamirror.com/news?format=feed&type=rss",
+           #"http://www.thesundayleader.lk/feed/"
            ]
 
     feedTitle = []
@@ -56,6 +56,7 @@ class RssScraper:
 
     locationName = input("Enter your location : ")
     count = 0
+    isFound = None
     while count < len(feedTitle):
         entityCount = 0
         while entityCount < len(placesInFeed[count]):
@@ -65,9 +66,14 @@ class RssScraper:
                 print(" News : " + feedTitle[count - 1])
                 print(" Content : " + feedContent[count - 1])
                 # print("index:"+str(l))
-
+                isFound = True
+            else:
+                isFound = False
             entityCount = entityCount + 1
         count = count + 1
+
+    if not isFound:
+        print("No matching articles")
 
 # while (i<len(placesInFeed)):
 #     print("places - %s" % [str(x) for x in placesInFeed[i]])
