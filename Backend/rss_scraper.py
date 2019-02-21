@@ -31,6 +31,8 @@ class RssScraper:
             print("feed " + str(entityCount) + " : " + post.title)
             entityCount = entityCount + 1
 
+        FirebasePyth.dados.child().update({feedParsed})
+
     # places = geograpy.get_place_context(text=feedList[1])
     # placesInFeed.append(places.places)
     # print("places - %s" % [str(x) for x in placesInFeed])
