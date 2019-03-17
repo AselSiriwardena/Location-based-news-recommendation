@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9977ddc-9a6e-4964-89b2-4794f1aa411d" name="Default Changelist" comment="RevertGettingLocation">
+    <list default="true" id="c9977ddc-9a6e-4964-89b2-4794f1aa411d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/rss_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/rss_scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,10 +14,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Location_based_news_reccomendation$FirebasePyth.coverage" NAME="FirebasePyth Coverage Results" MODIFIED="1550582717277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Backend" />
-    <SUITE FILE_PATH="coverage/Location_based_news_reccomendation$rss_scraper.coverage" NAME="rss_scraper Coverage Results" MODIFIED="1550517656591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Backend" />
-    <SUITE FILE_PATH="coverage/Location_based_news_reccomendation$NLP.coverage" NAME="NLP Coverage Results" MODIFIED="1550473676035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Backend" />
     <SUITE FILE_PATH="coverage/Location_based_news_reccomendation$TestPesh1.coverage" NAME="TestPesh1 Coverage Results" MODIFIED="1550388566917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Location_based_news_reccomendation$rss_scraper.coverage" NAME="rss_scraper Coverage Results" MODIFIED="1552382892783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Backend" />
+    <SUITE FILE_PATH="coverage/Location_based_news_reccomendation$NLP.coverage" NAME="NLP Coverage Results" MODIFIED="1550473676035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Backend" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -32,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Backend/rss_scraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="508">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -44,22 +46,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Backend/FirebasePyth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Backend/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Backend/NLP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state relative-caret-position="589">
+              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
               <folding>
                 <element signature="e#43#84#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.6/dist-packages/geograpy/places.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2508">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,6 +87,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="21d5657ff982a6fdcbd8154c141b997ce808da41" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -87,22 +102,23 @@
         <option value="$PROJECT_DIR$/Backend/venv/Lib/site-packages/geograpy/setup.py" />
         <option value="/usr/local/lib/python3.6/dist-packages/geograpy/places.py" />
         <option value="$PROJECT_DIR$/Backend/NLP.py" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/Backend/rss_scraper.py" />
-        <option value="$PROJECT_DIR$/Backend/FirebasePyth.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
-    <option name="height" value="1090" />
+    <option name="x" value="1970" />
+    <option name="y" value="-11" />
+    <option name="width" value="1317" />
+    <option name="height" value="780" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,24 +136,10 @@
               <item name="Location-based-news-reccomendation" type="462c0819:PsiDirectoryNode" />
               <item name="Frontend" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Location-based-news-reccomendation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Location-based-news-reccomendation" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="GettingCurrentPosition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Location-based-news-reccomendation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Location-based-news-reccomendation" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="GettingCurrentPosition" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -145,7 +147,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -164,29 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.FirebasePyth">
-    <configuration name="FirebasePyth" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Location-based-news-reccomendation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Backend" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Backend/FirebasePyth.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.rss_scraper">
     <configuration name="NLP" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Location-based-news-reccomendation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -216,7 +196,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="G:/Test1/venv/bin/python" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../Test1/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -257,14 +237,14 @@
       <item itemvalue="Python.NLP" />
       <item itemvalue="Python.rss_scraper" />
       <item itemvalue="Python.TestPesh1" />
-      <item itemvalue="Python.FirebasePyth" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.FirebasePyth" />
+        <item itemvalue="Python.rss_scraper" />
+        <item itemvalue="Python.TestPesh1" />
+        <item itemvalue="Python.NLP" />
         <item itemvalue="Python.rss_scraper" />
         <item itemvalue="Python.NLP" />
-        <item itemvalue="Python.TestPesh1" />
       </list>
     </recent_temporary>
   </component>
@@ -287,11 +267,15 @@
       <workItem from="1550425532587" duration="3378000" />
       <workItem from="1550429697114" duration="1297000" />
       <workItem from="1550468872960" duration="3319000" />
-      <workItem from="1550504736257" duration="12435000" />
-      <workItem from="1550582088954" duration="601000" />
-      <workItem from="1552454789826" duration="983000" />
-      <workItem from="1552455809883" duration="181000" />
-      <workItem from="1552456022729" duration="2492000" />
+      <workItem from="1550504736257" duration="20889000" />
+      <workItem from="1550655734494" duration="694000" />
+      <workItem from="1550662850647" duration="1940000" />
+      <workItem from="1550750268555" duration="387000" />
+      <workItem from="1551169353474" duration="3993000" />
+      <workItem from="1551263447927" duration="2107000" />
+      <workItem from="1552373645865" duration="236000" />
+      <workItem from="1552374219030" duration="4227000" />
+      <workItem from="1552573988000" duration="57000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit 2">
       <created>1550387669576</created>
@@ -405,25 +389,25 @@
       <option name="project" value="LOCAL" />
       <updated>1550511467080</updated>
     </task>
-    <task id="LOCAL-00017" summary="gettingLocation">
-      <created>1552455225743</created>
+    <task id="LOCAL-00017" summary="Alternative solution for reading multiple rss feeds">
+      <created>1550517730914</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1552455225743</updated>
+      <updated>1550517730914</updated>
     </task>
-    <task id="LOCAL-00018" summary="RevertGettingLocation">
-      <created>1552456139410</created>
+    <task id="LOCAL-00018" summary="Fixed the text or url required error.">
+      <created>1550580800572</created>
       <option name="number" value="00018" />
       <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1552456139410</updated>
+      <updated>1550580800572</updated>
     </task>
     <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36127000" />
+    <option name="totallyTimeSpent" value="55369000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,28 +419,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="51" y="-4" width="1869" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16577181" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16785519" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16395664" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23615465" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.08254963" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32868218" />
       <window_info anchor="bottom" id="Database Changes" order="7" weight="0.32868218" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32868218" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2208672" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49972573" weight="0.18181819" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.274244" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002743" side_tool="true" weight="0.18181819" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32868218" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32967636" />
       <window_info anchor="right" id="Database" order="4" weight="0.32939324" />
     </layout>
   </component>
@@ -464,9 +449,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/Frontend/GettingCurrentPosition" />
-    </ignored-roots>
     <MESSAGE value="Test commit 2" />
     <MESSAGE value="Test commit 3" />
     <MESSAGE value="Create a loop to get all rss feeds" />
@@ -477,9 +459,9 @@
     <MESSAGE value="Search news by location demo" />
     <MESSAGE value="Search news by location demo with summary" />
     <MESSAGE value="Search news by location demo with summary version 2" />
-    <MESSAGE value="gettingLocation" />
-    <MESSAGE value="RevertGettingLocation" />
-    <option name="LAST_COMMIT_MESSAGE" value="RevertGettingLocation" />
+    <MESSAGE value="Alternative solution for reading multiple rss feeds" />
+    <MESSAGE value="Fixed the text or url required error." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the text or url required error." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/TestPesh1.py" />
@@ -537,43 +519,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/geograpy/places.py" />
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/geograpy/__init__.py" />
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/geograpy/extraction.py" />
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/geograpy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/geograpy/extraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Backend/rss_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="508">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Backend/NLP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="589">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
           <folding>
             <element signature="e#43#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/GettingCurrentPosition/screens/HomeScreen.js">
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/geograpy/places.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        <state relative-caret-position="2508">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/FirebasePyth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
         </state>
       </provider>
     </entry>
