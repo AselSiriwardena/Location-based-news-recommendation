@@ -58,7 +58,7 @@ print("#########################################################################
 
 #####
 businessData=[]
-businessData=[]
+politicalData=[]
 
 f = open("/home/peshala/PycharmProjects/Test/Datasets/news-articles-dataset-master/news/business/world-leaders-gather-to-face-uncertainty.txt", "r")
 for x in f:
@@ -70,11 +70,11 @@ for x in f2:
 
 f3 = open("/home/peshala/PycharmProjects/Test/Datasets/news-articles-dataset-master/news/politics/lib-dems-target-the-student-vote.txt", "r")
 for x in f3:
-    businessData.append(x)
+    politicalData.append(x)
 
 f4 = open("/home/peshala/PycharmProjects/Test/Datasets/news-articles-dataset-master/news/politics/minimum-rate-for-foster-parents.txt", "r")
 for x in f4:
-    businessData.append(x)
+    politicalData.append(x)
 # for x in businessData:
 #     print(x)
 ######
@@ -114,7 +114,7 @@ while True:
 
                 similarityE = 0
                 avCountE = 0
-                for x in businessData:
+                for x in politicalData:
                     avCountE = avCountE + 1
                     similarityE = similarityE + fuzz.partial_ratio(x, feedContent[l - 1])
 
