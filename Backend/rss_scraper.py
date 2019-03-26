@@ -104,7 +104,6 @@ repeat = 0
 class News(object):
     pass
 
-
 while True:
 
     locationName = input("Enter your location : ")
