@@ -2,10 +2,13 @@ import feedparser
 import json
 import geograpy
 import nltk
-
+nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
+nltk.download('maxent_ne_chunker')
+nltk.download('words')
 
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
@@ -140,7 +143,7 @@ def categriser(l):
 
     maxValue=categoryPercentage[0]
     print(maxValue)
-    for
+    # for
 
 while True:
 
