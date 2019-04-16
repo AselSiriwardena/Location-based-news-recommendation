@@ -14,17 +14,27 @@ import NextArrowButton from '../components/buttons/NextArrowButton';
 import Notification from '../components/Notification';
 
 export default class LogIn extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            formValid:false,
+        }
+        this.handleCloseNotification=this.handleCloseNotification.bind(this);
+    }
     handleNextButton() {
         alert('Next Button pressed');
     }
 
     handleCloseNotification() {
-        alert("Closing Notification");
+        this.setState({formValid: true});
     }
     render() {
+        const {formValid} = this.state;
+        const showNotification=formValid ? false : true;
+        const background = formValid ? colors.green01 : colors.darkOrange;
         return (
             <KeyboardAvoidingView 
-            style = {styles.wrapper}
+            style = {[{backgroundColor:background},styles.wrapper]}
             // behavior = "padding" //need to add this
             >
                 <View style={styles.scrollViewWrapper}>
@@ -54,9 +64,9 @@ export default class LogIn extends Component {
                         handleNextButton = {this.handleNextButton}
                         />
                     </View>
-                    <View>
+                    <View style={showNotification ? {marginTop: 10} : {}}>
                         <Notification
-                        showNotification={true}
+                        showNotification={showNotification}
                         handleCloseNotification={this.handleCloseNotification}
                         type="Error"
                         firstLine="Those creditianals don't look right."
@@ -74,7 +84,7 @@ const styles = StyleSheet.create({
     wrapper: {
         display: 'flex',
         flex:1,
-        backgroundColor: colors.green01,
+        // backgroundColor: colors.green01,
     },
     scrollView: {
         paddingLeft: 30,
