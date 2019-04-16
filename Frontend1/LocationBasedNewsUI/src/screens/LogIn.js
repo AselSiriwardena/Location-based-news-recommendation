@@ -11,10 +11,15 @@ import {
 import colors from '../styles/colors';
 import InputField from '../components/form/InputField';
 import NextArrowButton from '../components/buttons/NextArrowButton';
+import Notification from '../components/Notification';
 
 export default class LogIn extends Component {
     handleNextButton() {
         alert('Next Button pressed');
+    }
+
+    handleCloseNotification() {
+        alert("Closing Notification");
     }
     render() {
         return (
@@ -44,9 +49,18 @@ export default class LogIn extends Component {
                             customStyle={{marginBottom: 30}}
                         />
                     </ScrollView>   
-                    <View style={styles.nextButton}>
+                    <View style={styles.nextButton}> 
                         <NextArrowButton
                         handleNextButton = {this.handleNextButton}
+                        />
+                    </View>
+                    <View>
+                        <Notification
+                        showNotification={true}
+                        handleCloseNotification={this.handleCloseNotification}
+                        type="Error"
+                        firstLine="Those creditianals don't look right."
+                        secondLine="Please try again."
                         />
                     </View>
                 </View>
