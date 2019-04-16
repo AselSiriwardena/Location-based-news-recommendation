@@ -25,14 +25,14 @@ export default class NextArrowButton extends Component {
       // const opacityStyle = disabled ? 0.2 : 0.6;
       
       // const { disabled }= this.props;
-      const opacityStyle = disabled ? {backgroundColor:'rgba(255,255,255,0.2'} : {backgroundColor:'rgba(255,255,255,0.6)'};
+      const opacityStyle = disabled ? 0.2:0.6;
     return (
       <View style={styles.buttonWrapper}>
         <TouchableHighlight
-            style={[opacityStyle,styles.button]}
-        //   style={[{ opacity: opacityStyle }, styles.button]}
+            // style={[opacityStyle,styles.button]}
+          style={[{ opacity: opacityStyle }, styles.button]}
           onPress={handleNextButton}
-        //   disabled={disabled}
+          disabled={disabled}
         >
          
             <Icon
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     height:60,
     // width: buttonSize,
     // height: buttonSize,
-    // backgroundColor: colors.white,
+    backgroundColor: colors.white,
   },
   icon: {
     marginRight: -2,
