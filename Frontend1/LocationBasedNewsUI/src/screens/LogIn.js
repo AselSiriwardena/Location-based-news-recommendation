@@ -18,7 +18,9 @@ export default class LogIn extends Component {
     }
     render() {
         return (
-            <KeyboardAvoidingView style = {styles.wrapper}
+            <KeyboardAvoidingView 
+            style = {styles.wrapper}
+            // behavior = "padding" //need to add this
             >
                 <View style={styles.scrollViewWrapper}>
                     <ScrollView style={styles.scrollView}>
@@ -42,12 +44,13 @@ export default class LogIn extends Component {
                             customStyle={{marginBottom: 30}}
                         />
                     </ScrollView>   
-                </View>
-                <View style={styles.nextButton}>
+                    <View style={styles.nextButton}>
                         <NextArrowButton
-                            handleNextButton = {this.handleNextButton}
+                        handleNextButton = {this.handleNextButton}
                         />
                     </View>
+                </View>
+                
             </KeyboardAvoidingView>
         );
     }
