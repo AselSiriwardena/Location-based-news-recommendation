@@ -21,18 +21,18 @@ import colors from '../../styles/colors';
 
 export default class NextArrowButton extends Component {
   render() {
-  	const { disabled,handleNextButton } = this.props;
+  	const { disabled } = this.props;
       // const opacityStyle = disabled ? 0.2 : 0.6;
       
       // const { disabled }= this.props;
-      const opacityStyle = disabled ? 0.2:0.6;
+      const opacityStyle = disabled ? {backgroundColor:'rgba(255,255,255,0.2'} : {backgroundColor:'rgba(255,255,255,0.6)'};
     return (
       <View style={styles.buttonWrapper}>
         <TouchableHighlight
-            // style={[opacityStyle,styles.button]}
-          style={[{ opacity: opacityStyle }, styles.button]}
-          onPress={handleNextButton}
-          disabled={disabled}
+            style={[opacityStyle,styles.button]}
+        //   style={[{ opacity: opacityStyle }, styles.button]}
+          // onPress={handleNextButton}
+        //   disabled={disabled}
         >
          
             <Icon
@@ -47,10 +47,10 @@ export default class NextArrowButton extends Component {
   }
 }
 // Functioning of next arrowButton
-NextArrowButton.propTypes = {
-  disabled: PropTypes.bool,
-  handleNextButton: PropTypes.func,
-};
+// NextArrowButton.propTypes = {
+//   disabled: PropTypes.bool,
+//   handleNextButton: PropTypes.func,
+// };
 
 const styles = StyleSheet.create({
 //   buttonWrapper: {
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     height:60,
     // width: buttonSize,
     // height: buttonSize,
-    backgroundColor: colors.white,
+    // backgroundColor: colors.white,
   },
   icon: {
     marginRight: -2,

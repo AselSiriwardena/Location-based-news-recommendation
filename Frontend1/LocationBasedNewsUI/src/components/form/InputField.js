@@ -27,7 +27,7 @@ export default class InputField extends Component {
     this.setState({ secureInput: !this.state.secureInput});
   }
   render(){
-    const {labelText,labelTextSize,labelColor,textColor, borderBottomColor, inputType, customStyle,onChangeText} = this.props;
+    const {labelText,labelTextSize,labelColor,textColor, borderBottomColor, inputType, customStyle} = this.props;
     const { secureInput} = this.state;
     const fontSize = labelTextSize || 14;
     const color = labelColor || colors.white;
@@ -49,7 +49,6 @@ export default class InputField extends Component {
           autoCorrect={false}
           style={[{color: inputColor, borderBottomColor: borderBottom},styles.inputField]}
           secureTextEntry={secureInput}
-          onChangeText={onChangeText}
         />
       </View>
     );
