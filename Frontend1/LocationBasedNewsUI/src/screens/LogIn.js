@@ -11,7 +11,7 @@ import {
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { ActionCreators } from '../redux/actions';
-import colors from '../styles/colors'; 
+import colors from '../styles/colors';
 import { transparentHeaderStyle } from '../styles/navigation';
 import InputField from '../components/form/InputField';
 import NextArrowButton from '../components/buttons/NextArrowButton';
@@ -43,14 +43,14 @@ class LogIn extends Component {
   }
 
   handleNextButton() {
-  	this.setState({ loadingVisible: true });
+    this.setState({ loadingVisible: true });
     const { navigate } = this.props.navigation;
 
-  	setTimeout(() => {
+    setTimeout(() => {
       const { emailAddress, password } = this.state;
       if (this.props.logIn(emailAddress, password)) {
         this.setState({ formValid: true, loadingVisible: false });
-        navigate('LoggedIn');
+        navigate('TurnOnNotifications');
       } else {
         this.setState({ formValid: false, loadingVisible: false });
       }
@@ -67,11 +67,11 @@ class LogIn extends Component {
 
     if (!this.state.validEmail) {
       if (emailCheckRegex.test(email)) {
-      	this.setState({ validEmail: true });
+        this.setState({ validEmail: true });
       }
     } else {
       if (!emailCheckRegex.test(email)) {
-      	this.setState({ validEmail: false });
+        this.setState({ validEmail: false });
       }
     }
   }
@@ -81,8 +81,8 @@ class LogIn extends Component {
 
     if (!this.state.validPassword) {
       if (password.length > 4) {
-      	//Password has to be at least 4 characters long
-      	this.setState({ validPassword: true });
+        //Password has to be at least 4 characters long
+        this.setState({ validPassword: true });
       }
     } else if (password <= 4) {
       this.setState({ validPassword: false });
@@ -98,61 +98,61 @@ class LogIn extends Component {
   }
 
   render() {
-  	const { formValid, loadingVisible, validEmail, validPassword } = this.state;
-  	const showNotification = formValid ? false : true;
-  	const background = formValid ? colors.green01 : colors.darkOrange;
-  	const notificationMarginTop = showNotification ? 10 : 0;
+    const { formValid, loadingVisible, validEmail, validPassword } = this.state;
+    const showNotification = formValid ? false : true;
+    const background = formValid ? colors.green01 : colors.darkOrange;
+    const notificationMarginTop = showNotification ? 10 : 0;
     return (
-      <KeyboardAvoidingView
-        style={[{backgroundColor: background}, styles.wrapper]}
-        behavior="padding"
-       >
-        <View style={styles.scrollViewWrapper}>
-          <ScrollView style={styles.scrollView}>
-            <Text style={styles.loginHeader}>Log In</Text>
-            <InputField
-              labelText="EMAIL ADDRESS"
-              labelTextSize={14}
-              labelColor={colors.white}
-              textColor={colors.white}
-              borderBottomColor={colors.white}
-              inputType="email"
-              customStyle={{marginBottom: 30}}
-              onChangeText={this.handleEmailChange}
-              showCheckmark={validEmail}
-              autoFocus={true}
+        <KeyboardAvoidingView
+            style={[{backgroundColor: background}, styles.wrapper]}
+            behavior="padding"
+        >
+          <View style={styles.scrollViewWrapper}>
+            <ScrollView style={styles.scrollView}>
+              <Text style={styles.loginHeader}>Log In</Text>
+              <InputField
+                  labelText="EMAIL ADDRESS"
+                  labelTextSize={14}
+                  labelColor={colors.white}
+                  textColor={colors.white}
+                  borderBottomColor={colors.white}
+                  inputType="email"
+                  customStyle={{marginBottom: 30}}
+                  onChangeText={this.handleEmailChange}
+                  showCheckmark={validEmail}
+                  autoFocus={true}
+              />
+              <InputField
+                  labelText="PASSWORD"
+                  labelTextSize={14}
+                  labelColor={colors.white}
+                  textColor={colors.white}
+                  borderBottomColor={colors.white}
+                  inputType="password"
+                  customStyle={{marginBottom: 30}}
+                  onChangeText={this.handlePasswordChange}
+                  showCheckmark={validPassword}
+              />
+            </ScrollView>
+            <NextArrowButton
+                handleNextButton={this.handleNextButton}
+                disabled={this.toggleNextButtonState()}
             />
-            <InputField
-              labelText="PASSWORD"
-              labelTextSize={14}
-              labelColor={colors.white}
-              textColor={colors.white}
-              borderBottomColor={colors.white}
-              inputType="password"
-              customStyle={{marginBottom: 30}}
-              onChangeText={this.handlePasswordChange}
-              showCheckmark={validPassword}
-            />
-          </ScrollView>
-          <NextArrowButton
-            handleNextButton={this.handleNextButton}
-            disabled={this.toggleNextButtonState()}
-          />
-          <View style={[styles.notificationWrapper, {marginTop: notificationMarginTop}]}>
-            <Notification
-              showNotification={showNotification}
-              handleCloseNotification={this.handleCloseNotification}
-              type="Error"
-              firstLine="Those credentials don't look right."
-              secondLine="Please try again."
-            />
+            <View style={[styles.notificationWrapper, {marginTop: notificationMarginTop}]}>
+              <Notification
+                  showNotification={showNotification}
+                  handleCloseNotification={this.handleCloseNotification}
+                  type="Error"
+                  firstLine="Those credentials don't look right."
+                  secondLine="Please try again."
+              />
+            </View>
           </View>
-        </View>
-        <Loader
-          modalVisible={loadingVisible}
-          animationType="fade"
-        />
-      </KeyboardAvoidingView>
+          <Loader
+              modalVisible={loadingVisible}
+              animationType="fade"
+          />
+        </KeyboardAvoidingView>
     );
   }
 }
@@ -179,8 +179,8 @@ const styles = StyleSheet.create({
     marginBottom: 40,
   },
   notificationWrapper: {
-  	position: 'absolute',
-  	bottom: 0,
+    position: 'absolute',
+    bottom: 0,
   }
 });
 

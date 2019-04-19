@@ -6,16 +6,18 @@ import LoggedOut from '../screens/LoggedOut';
 import LoggedIn from '../screens/LoggedIn';
 import LogIn from '../screens/LogIn';
 import ForgotPassword from '../screens/ForgotPassword';
+import TurnOnNotifications from '../screens/TurnOnNotifications';
 
-export const AppNavigator = StackNavigator({    //putting all into nav
+export const AppNavigator = StackNavigator({
   LoggedOut: { screen: LoggedOut },
   LoggedIn: { screen: LoggedIn },
   LogIn: { screen: LogIn },
   ForgotPassword: { screen: ForgotPassword },
+  TurnOnNotifications: { screen: TurnOnNotifications },
 });
 
 const AppWithNavigationState = ({ dispatch, nav, listener }) => (
-  <AppNavigator navigation={addNavigationHelpers({ dispatch, state: nav, addListener: listener })} />
+    <AppNavigator navigation={addNavigationHelpers({ dispatch, state: nav, addListener: listener })} />
 );
 
 AppWithNavigationState.propTypes = {
