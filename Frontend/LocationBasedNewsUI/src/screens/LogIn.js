@@ -17,10 +17,23 @@ import InputField from '../components/form/InputField';
 import NextArrowButton from '../components/buttons/NextArrowButton';
 import Notification from '../components/Notification';
 import Loader from '../components/Loader';
+import NavBarButton from '../components/buttons/NavBarButton';
 
 class LogIn extends Component {
 
   static navigationOptions = ({ navigation }) => ({
+    headerRight: <NavBarButton
+        handleButtonPress={() => navigation.navigate('ForgotPassword')}
+        location="right"
+        color={colors.white}
+        text="Forgot Password"
+    />,
+    headerLeft: <NavBarButton
+        handleButtonPress={() => navigation.goBack()}
+        location="left"
+        icon={<Icon name = "angle-left" color = {colors.white} size={30}/>}
+
+    />,
     headerStyle: transparentHeaderStyle,
     headerTintColor: colors.white,
   });

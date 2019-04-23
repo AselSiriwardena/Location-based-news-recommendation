@@ -5,24 +5,26 @@ import {
   StyleSheet,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import NoResults from '../components/saved/NoResults';
+import colors from '../styles/colors';
 
 export default class InboxContainer extends Component {
   static navigationOptions = {
     tabBarLabel: 'SAVED',
     tabBarIcon: ({ tintColor }) => (
-      <Icon
-        name="ios-heart-outline"
-        size={22}
-        color={tintColor}
-      />
+        <Icon
+            name="ios-heart-outline"
+            size={22}
+            color={tintColor}
+        />
     ),
   };
 
   render() {
     return (
-      <View style={styles.wrapper}>
-        <Text>Saved Container</Text>
-      </View>
+        <View style={styles.wrapper}>
+          <NoResults />
+        </View>
     );
   }
 };
@@ -30,6 +32,6 @@ export default class InboxContainer extends Component {
 const styles = StyleSheet.create({
   wrapper: {
     display: 'flex',
-    padding: 50,
-  }
+    backgroundColor: colors.white,
+  },
 });

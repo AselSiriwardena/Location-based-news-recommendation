@@ -6,13 +6,26 @@ import {
   StyleSheet,
   ScrollView,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import colors from '../styles/colors';
 import InputField from '../components/form/InputField';
 import Notification from '../components/Notification';
 import NextArrowButton from '../components/buttons/NextArrowButton';
+import NavBarButton from '../components/buttons/NavBarButton';
 import Loader from '../components/Loader';
+import {transparentHeaderStyle} from "../styles/navigation";
 
 export default class ForgotPassword extends Component {
+  static navigationOptions = ({ navigation }) => ({
+    headerLeft: <NavBarButton
+        handleButtonPress={() => navigation.goBack()}
+        location="left"
+        icon={<Icon name = "angle-left" color = {colors.white} size={30}/>}
+
+    />,
+    headerStyle: transparentHeaderStyle,
+    headerTintColor: colors.white,
+  });
   constructor(props) {
   	super(props);
   	this.state = {
