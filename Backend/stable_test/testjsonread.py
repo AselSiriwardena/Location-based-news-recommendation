@@ -63,6 +63,9 @@ for i in nouns:
 sportKeyWords=[]
 polKeyWords=[]
 busKeyWords=[]
+eduKeyWords=[]
+healthKeyWords=[]
+entKeyWords=[]
 with open('ratings.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
@@ -73,20 +76,64 @@ with open('ratings.csv') as csv_file:
         else:
             # print(f'\t{row[0]} works in the {row[1]} department, and was born in {row[2]}.')
 
+            #checks the data in dataset are strings or null values
+            # check the row 0 : business keywords
+            if row[0].isdigit() or row[0] == '':
+                row[0]
+
+            else:
+                busKeyWords.append(row[0])
+
+            #check the row 1 : sport keywords
             if row[1].isdigit() or row[1]== '':
                 row[1]
 
             else:
                 sportKeyWords.append(row[1])
 
+            # check the row 2 : politics keywords
+            if row[2].isdigit() or row[2] == '':
+                row[2]
 
-            busKeyWords.append(row[0])
-            polKeyWords.append(row[2])
+            else:
+                polKeyWords.append(row[2])
+
+            # check the row 3 : education keywords
+            if row[3].isdigit() or row[3] == '':
+                row[3]
+
+            else:
+                eduKeyWords.append(row[3])
+
+            # check the row 4 : helth keywords
+            if row[4].isdigit() or row[4] == '':
+                row[4]
+
+            else:
+                healthKeyWords.append(row[4])
+
+            # check the row 5 : entertainment keywords
+            if row[5].isdigit() or row[5] == '':
+                row[5]
+
+            else:
+                entKeyWords.append(row[5])
+
+
+
+
+            # busKeyWords.append(row[0])
+            # polKeyWords.append(row[2])
 
             line_count += 1
     print(f'Processed {line_count} lines.')
 
 i=1
 for x in sportKeyWords:
+    print(str(i),x)
+    i+=1
+
+i=1
+for x in entKeyWords:
     print(str(i),x)
     i+=1
