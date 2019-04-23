@@ -15,6 +15,7 @@ java_path ="C:/Program Files/Java/jdk1.8.0_101/bin/java.exe"
 os.environ['JAVAHOME'] = java_path
 nltk.internals.config_java('C:/Program Files/Java/jdk1.8.0_101/bin/java.exe')
 pos_tagger = StanfordPOSTagger(model, jar)
+pos_tagger.java_options='-mx4096m'
 
 
 url = ["http://www.adaderana.lk/rss.php",
