@@ -6,5 +6,7 @@ export const transparentHeaderStyle = {
   top: 0,
   left: 0,
   right: 0,
-  borderBottomWidth: 0
+  borderBottomWidth: 0,
+  //To fix the error on android
+  elevation: 0,
 }

@@ -6,6 +6,7 @@ import {
   Text,
   View,
   Image,
+    ScrollView,
   TouchableHighlight,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -35,7 +36,7 @@ export default class LoggedOut extends Component {
 
   render() {
     return (
-      <View style={styles.wrapper}>
+      <ScrollView style={styles.wrapper}>
         <View style={styles.welcomeWrapper}>
           <Image
             source={require('../img/trapco.png')}
@@ -84,7 +85,7 @@ export default class LoggedOut extends Component {
            <Text style={styles.termsText}>.</Text>
          </View>
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }

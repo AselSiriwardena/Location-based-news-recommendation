@@ -58,9 +58,9 @@ export default class InputField extends Component {
   	const borderBottom = borderBottomColor || 'transparent';
     const keyboardType = inputType === 'email' ? 'email-address' : 'default';
 
-    const iconScale = scaleCheckmarkValue.interpolate({
+    const iconScale = scaleCheckmarkValue.interpolate({ //changing correct mark animation with validation
       inputRange: [0, 0.5, 1],
-      outputRange: [0, 1.6, 1]
+      outputRange: [0.01, 1.6, 1]
     });
 
     const scaleValue = showCheckmark ? 1 : 0;
@@ -92,6 +92,7 @@ export default class InputField extends Component {
           autoFocus={autoFocus}
           autoCapitalize={autoCapitalize}
           autoCorrect={false}
+          underlineColorAndroid="transparent"
         />
       </View>
     );

@@ -48,8 +48,10 @@ export default class Notification extends Component {
   	return (
   	  <Animated.View style={[{marginBottom: positionValue}, styles.wrapper]}>
   	    <View style={styles.notificationContent}>
+            <View style={styles.errorMessage}>
   	      <Text style={styles.errorText}>{type}</Text>
-  	      <Text style={styles.errorMessage}>{firstLine}</Text>
+  	      <Text>{firstLine}</Text>
+            </View>
   	      <Text style={styles.errorMessage}>{secondLine}</Text>
   	    </View>
   	    <TouchableOpacity
@@ -94,6 +96,7 @@ const styles = StyleSheet.create({
     marginBottom: 2,
   },
   errorMessage: {
+      flexDirection: 'row',
     marginBottom: 2,
     fontSize: 14,
   },
@@ -101,5 +104,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     right: 10,
     top: 10,
+      zIndex: 999,
   },
 });
