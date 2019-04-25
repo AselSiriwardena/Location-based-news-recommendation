@@ -49,3 +49,21 @@ const styles = StyleSheet.create({
 });
 
 export default App
+
+// Works as well :
+// ------------
+
+// location object
+// Geocoder.from({
+// 	latitude : 41.89,
+// 	longitude : 12.49
+// });
+
+// latlng object
+// Geocoder.from({
+// 	lat : 41.89,
+// 	lng : 12.49
+// });
+
+// array
+// Geocoder.from([41.89, 12.49]);
