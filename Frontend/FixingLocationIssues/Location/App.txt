@@ -1,0 +1,65 @@
+import React, { Component } from 'react';
+import { View, Text,StyleSheet,TouchableOpacity } from 'react-native';
+import Geocoder from 'react-native-geocoding';
+
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      latitude: null,
+      longitude: null,
+      error: null,
+    };
+  }
+
+  componentDidMount() {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        this.setState({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+          error: null,
+        });
+      },
+      (error) => this.setState({ error: error.message }),
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 1000 },
+    );
+  }
+  getData(){
+       
+    Geocoder.init("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+
+    Geocoder.from(this.state.latitude,this.state.longitude)
+        .then(json => {
+               var addressComponent = json.results[0].formatted_address;
+      console.log(addressComponent);
+      console.log(addressComponent)
+     alert(addressComponent);
+        })
+      .catch(error => console.warn(error));
+    }
+
+  render() {
+    return (
+      <View style={{ flexGrow: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Latitude: {this.state.latitude}</Text>
+        <Text>Longitude: {this.state.longitude}</Text>
+        <View style={styles.container}>
+       <TouchableOpacity onPress={()=>{this.getData()}}>
+         <Text>Get Address</Text>
+      </TouchableOpacity>
+       </View>
+        {this.state.error ? <Text>Error: {this.state.error}</Text> : null}
+      </View>
+    );
+}
+}
+
+const styles = StyleSheet.create({
+    container: {
+      backgroundColor: '#F5FCFF',
+      flex: 10,
+      justifyContent: 'center'
+    },
+  });
