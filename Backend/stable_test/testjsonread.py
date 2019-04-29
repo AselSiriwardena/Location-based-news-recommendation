@@ -46,7 +46,7 @@ java_path ="C:/Program Files/Java/jdk1.8.0_101/bin/java.exe"
 os.environ['JAVAHOME'] = java_path
 nltk.internals.config_java('C:/Program Files/Java/jdk1.8.0_101/bin/java.exe')
 pos_tagger = StanfordPOSTagger(model, jar)
-text = pos_tagger.tag(word_tokenize("What's the airspeed of an unladen swallow army?"))
+text = pos_tagger.tag(word_tokenize("Sri Lanka is a beautiful country. I love it. My name is peshala "))
 print(text)
 # st = StanfordPOSTagger('english-bidirectional-distsim.tagger') # doctest: +SKIP
 # st.tag('What is the airspeed of an unladen swallow ?'.split())  # doctest: +SKIP

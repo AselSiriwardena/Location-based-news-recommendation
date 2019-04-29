@@ -2,7 +2,7 @@ import feedparser
 import json
 import genericpath
 import geograpy
-from firebase import firebase
+# from firebase import firebase
 from geograpy.extraction import Extractor
 
 # connect to firebase
@@ -22,6 +22,9 @@ NewsFeed3 = feedparser.parse("http://www.hirunews.lk/rss/english.xml")
 print('Number of RSS posts :', len(NewsFeed.entries))
 
 num = len(NewsFeed.entries)  # Get the rage of the news feed
+e6 = Extractor(text='Colombo is a big sity')  # Extract location
+e6.find_entities()
+print(e6.places)  # E6 is an array
 
 for x in range(num):
     entry = NewsFeed.entries[x]
@@ -30,7 +33,7 @@ for x in range(num):
 
     e6 = Extractor(text=entry.description)  # Extract location
     e6.find_entities()
-    print(e6.places)  # E6 is an array
+    print(e6)  # E6 is an array
 
     print("      ")
     print("------------------------------------------------")
