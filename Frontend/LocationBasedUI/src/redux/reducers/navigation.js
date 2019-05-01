@@ -9,7 +9,7 @@ const initialNavState = AppNavigator.router.getStateForAction(firstAction);
 export const nav = (state = initialNavState, action) => {
    let nextState = AppNavigator.router.getStateForAction(action, state);
    //Setting status bar style dark at tabs
-   if (action.routeName === 'TurnOnNotifications' || action.routeName === 'LoggedIn') {
+   if (action.routeName === 'TurnOnNotifications' || action.routeName === 'LoggedOut') {
       StatusBar.setBarStyle('dark-content', true);
    }
    return nextState || state;

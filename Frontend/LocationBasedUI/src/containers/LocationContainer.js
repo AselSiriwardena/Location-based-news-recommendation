@@ -4,35 +4,66 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import Geocoder from 'react-native-geocoding';
 
 export default class InboxContainer extends Component {
+//   constructor(){
+//     super();
+//     this.state = {
+//         ready: false,
+//         where: {lat:null, lng:null},
+//         error: null
+//     }
+// }
+// componentDidMount(){
+//     let geoOptions = {
+//         enableHighAccuracy: true,
+//         timeOut: 20000,
+//         maximumAge: 60 * 60 * 24
+//     };
+//     this.setState({ready:false, error: null });
+//     navigator.geolocation.getCurrentPosition( this.geoSuccess, 
+//                                             this.geoFailure,
+//                                             geoOptions);
+// }
+// geoSuccess = (position) => {
+//     console.log(position.coords.latitude);
+    
+//     this.setState({
+//         ready:true,
+//         where: {lat: position.coords.latitude,lng:position.coords.longitude }
+//     })
+// }
+// geoFailure = (err) => {
+//     this.setState({error: err.message});
+// }
+constructor(props) {
+  super(props);
 
-  constructor(props) {
-	  super(props);
-  
-	  this.state = {
-		latitude: null,
-		longitude: null,
-		error:null,
-	  };
-  }
-  componentDidMount() {
-	  navigator.geolocation.getCurrentPosition(
-		 (position) => {
-		   console.log("wokeeey");
-		   console.log(position);
-		   this.setState({
-			 latitude: position.coords.latitude,
-			 longitude: position.coords.longitude,
-			 error: null,
-		   });
-		 },
-		 (error) => this.setState({ error: error.message }),
-		 { enableHighAccuracy: false, timeout: 200000, maximumAge: 1000 },
-	   );
-   }
+  this.state = {
+  latitude: null,
+  longitude: null,
+  error:null,
+  };
+}
+ 
+componentDidMount() {
+  navigator.geolocation.getCurrentPosition(
+   (position) => {
+     console.log("wokeeey");
+     console.log(position);
+     this.setState({
+     latitude: position.coords.latitude,
+     longitude: position.coords.longitude,
+     error: null,
+     });
+   },
+   (error) => this.setState({ error: error.message }),
+   { enableHighAccuracy: false, timeout: 200000, maximumAge: 1000 },
+   );
+ }
+
    getData(){
-		// Geocoder.init('AIzaSyDtWe3TP1KeWdRoxg9W22aTNzM8HIk6zzg');
-    Geocoder.setApiKey("AIzaSyDtWe3TP1KeWdRoxg9W22aTNzM8HIk6zzg");
-    Geocoder.getFromLatLng(5.9549,80.5550).then(
+		// Geocoder.init('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+    Geocoder.setApiKey("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+    Geocoder.getFromLatLng(this.state.latitude,this.state.longitude).then(
       json => {
         var address_component = json.results[0].address_components[0];
         var stateName = json.results[0].address_components.filter(x => x.types.filter(t => t == 'administrative_area_level_2').length > 0)[0].short_name;
@@ -63,6 +94,8 @@ export default class InboxContainer extends Component {
 			 
        <Text> Longitude:- {this.state.latitude} </Text>
        <Text> Latitude:- {this.state.longitude} </Text>
+       {/* <Text>Longitude:-{this.state.where.lng}</Text>
+       <Text>Latitude:-{this.state.where.lat}</Text> */}
        <Text> {this.state.error} </Text>
        
      </View>
