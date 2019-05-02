@@ -12,12 +12,12 @@ from geograpy.extraction import Extractor
 import firebase_admin
 from firebase_admin import credentials, firestore
 
-cred = credentials.Certificate("../DjangoBackendOne/news/newsapp-54f7c-firebase-adminsdk-wzja4-dc085fad0b.json")
+cred = credentials.Certificate("C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/news/newsapp-54f7c-firebase-adminsdk-wzja4-dc085fad0b.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
-jar = '../DjangoBackendOne/stanford-postagger-2018-10-16/stanford-postagger.jar'
-model = '../DjangoBackendOne/stanford-postagger-2018-10-16/models/english-left3words-distsim.tagger'
+jar = 'C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/stanford-postagger-2018-10-16/stanford-postagger.jar'
+model = 'C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/stanford-postagger-2018-10-16/models/english-left3words-distsim.tagger'
 java_path = "C:/Program Files/Java/jdk1.8.0_101/bin/java.exe"
 
 os.environ['JAVAHOME'] = java_path
@@ -77,7 +77,7 @@ class News:
         self.locations = locations
 
 
-with open('../DjangoBackendOne/news/ratings.csv') as csv_file:
+with open('C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/news/ratings.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
     for row in csv_reader:
