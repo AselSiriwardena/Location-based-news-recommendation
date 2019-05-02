@@ -12,12 +12,12 @@ from geograpy.extraction import Extractor
 import firebase_admin
 from firebase_admin import credentials, firestore
 
-cred = credentials.Certificate("../DjangoBackendOne/news/newsapp-54f7c-firebase-adminsdk-wzja4-dc085fad0b.json")
+cred = credentials.Certificate("C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/news/newsapp-54f7c-firebase-adminsdk-wzja4-dc085fad0b.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
-jar = '../DjangoBackendOne/stanford-postagger-2018-10-16/stanford-postagger.jar'
-model = '../DjangoBackendOne/stanford-postagger-2018-10-16/models/english-left3words-distsim.tagger'
+jar = 'C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/stanford-postagger-2018-10-16/stanford-postagger.jar'
+model = 'C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/stanford-postagger-2018-10-16/models/english-left3words-distsim.tagger'
 java_path = "C:/Program Files/Java/jdk1.8.0_101/bin/java.exe"
 
 os.environ['JAVAHOME'] = java_path
@@ -77,7 +77,7 @@ class News:
         self.locations = locations
 
 
-with open('../DjangoBackendOne/news/NewsCategoryData.csv') as csv_file:
+with open('C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/news/NewsCategoryData.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
     for row in csv_reader:
@@ -320,7 +320,7 @@ def check_news_dataset():
     global news_in_db
 
     newsId=[]
-    with open('../DjangoBackendOne/news/NewsDataset.csv') as csv_file:
+    with open('C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/news/NewsDataset.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
 
         for row in csv_reader:
@@ -329,7 +329,7 @@ def check_news_dataset():
 
 
 
-    with open('../DjangoBackendOne/news/NewsDataset.csv', 'a') as csvFile:
+    with open('C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/news/NewsDataset.csv', 'a') as csvFile:
         writer = csv.writer(csvFile)
 
         for news in news_in_db:
@@ -347,7 +347,7 @@ def check_news_dataset():
 def update_news_dataset(object):
     row = [object.news_id,object.title,object.category,object.summary,object.description,object.link,object.date_time]
 
-    with open('../DjangoBackendOne/news/NewsDataset.csv', 'a') as csvFile:
+    with open('C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/news/NewsDataset.csv', 'a') as csvFile:
         writer = csv.writer(csvFile)
         writer.writerow(row)
 
@@ -358,7 +358,7 @@ def collect_news():
     print('Running collecting news')
     retrive_news_from_firebase()
     # check_news_dataset()
-    set_entityCount()
+    # set_entityCount()
 
 
     url = ["http://www.adaderana.lk/rss.php",

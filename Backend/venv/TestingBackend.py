@@ -39,7 +39,7 @@ config = {
 # firebase = pyrebase.initialize_app(config)
 
 newsObjects = []
-entityCount = 0
+entityCount = 1
 
 nouns = []
 adj = []
@@ -65,7 +65,7 @@ class News:
         self.category = category
         self.title = title
         self.description = description
-        self.summery = summery
+        self.summary = summery
         self.link = link
         self.date_time = date_time
         self.news_id=id
@@ -77,7 +77,7 @@ class News:
         self.locations = locations
 
 
-with open('C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/news/ratings.csv') as csv_file:
+with open('C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/news/NewsCategoryData.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
     for row in csv_reader:
@@ -312,9 +312,49 @@ def set_entityCount():
     print('current index',entityCount)
 
 
+def check_news_dataset():
+
+    global news_in_db
+
+    newsId=[]
+    with open('C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/news/NewsDataset.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+
+        for row in csv_reader:
+            # print(row[0])
+            newsId.append(row)
+
+    csv_file.close()
+
+
+    with open('C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/news/NewsDataset.csv', 'a') as csvFile:
+        writer = csv.writer(csvFile)
+
+        for news in news_in_db:
+            for id in newsId:
+                if id[0] != news.news_id:
+                    row = [news.news_id, news.title, news.category, news.summary, news.description,
+                           news.link,news.date_time]
+
+                    writer.writerow(row)
+
+
+
+
+
+def update_news_dataset(object):
+    row = [object.news_id,object.title,object.category,object.summary,object.description,object.link,object.date_time]
+
+    with open('C:/Users/Peshala/PycharmProjects/Location-based-news-reccomendation/DjangoBackend/DjangoBackendOne/news/NewsDataset.csv', 'a') as csvFile:
+        writer = csv.writer(csvFile)
+        writer.writerow(row)
+    csvFile.close()
+
+
 def collect_news():
     print('Running collecting news')
     retrive_news_from_firebase()
+    # check_news_dataset()
 
     url = ["http://www.adaderana.lk/rss.php",
            "http://www.hirunews.lk/rss/english.xml",
@@ -339,7 +379,7 @@ def collect_news():
 
                     category = classify_news(post.title)
 
-                    set_entityCount()
+                    # set_entityCount()
                     newsObj = News(post.title, post.description, post.summary, post.link, category, post.published,entityCount)
                     newsObjects.append(newsObj)
 
@@ -367,13 +407,15 @@ def collect_news():
                         u'title':newsObj.title,
                         u'news_id':newsObj.news_id,
                         u'description': newsObj.description,
-                        u'summary': newsObj.summery,
+                        u'summary': newsObj.summary,
                         u'link': newsObj.link,
                         u'category': newsObj.category,
                         u'locations': newsObj.locations,
                         u'date_time': newsObj.date_time
 
                     })
+
+                    update_news_dataset(newsObj)
 
                     # db.collection(u'newsAppData').document(u'news').set(newsObj)
                     print("feed " + str(newsObj.news_id) + " : " + str(newsObj.title))

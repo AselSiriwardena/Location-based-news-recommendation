@@ -7,11 +7,11 @@ class News:
     # summery = ''
     # date_time= ''
 
-    def __init__(self,title, description,summery,link,category,date_time):
+    def __init__(self,title, description,summary,link,category,date_time):
         self.category = category
         self.title = title
         self.description = description
-        self.summery = summery
+        self.summary = summary
         self.link = link
         self.date_time = date_time
 
