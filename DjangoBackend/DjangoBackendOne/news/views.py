@@ -8,14 +8,14 @@ from django.http import HttpResponse
 # cred = credentials.Certificate("../DjangoBackendOne/news/newsapp-54f7c-firebase-adminsdk-wzja4-dc085fad0b.json")
 # firebase_admin.initialize_app(cred)
 db = firestore.client()
-# Create your views here.
+# Create your   views here.
 
 
 @csrf_protect
 def get_news_by_category(request):
     category= request.GET.get('category')
     print('category requested :',category)
-    docs = db.collection(u'news').where(u'category', u'==', category).get()
+    docs = db.collection(u'news').where(u'category', u'==', 'sports').get()
 
     categorizedNews= []
 
@@ -27,7 +27,7 @@ def get_news_by_category(request):
             "title": doc._data['title'],
             "category": doc._data['category'],
             "description":doc._data['description'],
-            "summery":doc._data['summery'],
+            "summary":doc._data['summary'],
             "link":doc._data['link'],
             "date_time":doc._data['date_time'],
 
