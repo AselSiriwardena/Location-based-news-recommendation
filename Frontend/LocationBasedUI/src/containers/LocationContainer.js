@@ -61,8 +61,8 @@ componentDidMount() {
  }
 
    getData(){
-		// Geocoder.init('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
-    Geocoder.setApiKey("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+		// Geocoder.init('AIzaSyDtWe3TP1KeWdRoxg9W22aTNzM8HIk6zzg');
+    Geocoder.setApiKey("AIzaSyDtWe3TP1KeWdRoxg9W22aTNzM8HIk6zzg");
     Geocoder.getFromLatLng(this.state.latitude,this.state.longitude).then(
       json => {
         var address_component = json.results[0].address_components[0];
