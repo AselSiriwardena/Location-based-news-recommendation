@@ -25,7 +25,6 @@ nltk.internals.config_java('C:/Program Files/Java/jdk1.8.0_101/bin/java.exe')
 pos_tagger = StanfordPOSTagger(model, jar)
 pos_tagger.java_options = '-mx4096m'
 
-import pyrebase
 
 config = {
     "apiKey": "AIzaSyBJumddViT3Y70F6vmEdP_1VMGXqEFaqgg",
