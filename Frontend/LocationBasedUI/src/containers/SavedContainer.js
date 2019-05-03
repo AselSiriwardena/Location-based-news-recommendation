@@ -5,10 +5,13 @@ import {
   StyleSheet,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import NoResults from '../components/saved/NoResults';
+// import NoResults from '../components/saved/NoResults';
 import colors from '../styles/colors';
 
+
 export default class InboxContainer extends Component {
+
+ 
   static navigationOptions = {
     tabBarLabel: 'SAVED',
     tabBarIcon: ({ tintColor }) => (
@@ -23,7 +26,8 @@ export default class InboxContainer extends Component {
   render() {
     return (
         <View style={styles.wrapper}>
-          <NoResults />
+          {/* <NoResults /> */}
+          <Text>Hi</Text>
         </View>
     );
   }

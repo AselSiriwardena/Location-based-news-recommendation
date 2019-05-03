@@ -10,7 +10,6 @@ import { getNews } from '../news';
 import Article from '../components/Article';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-
 export default class InboxContainer extends Component {
   constructor(props) {
     super(props);
@@ -20,6 +19,8 @@ export default class InboxContainer extends Component {
   }
   // Called after a component is mounted
   componentDidMount() {
+    // firebase.auth().signInWithEmailAndPassword
+    // ("web@imandy.ie", "123456")
     this.fetchNews();
    }
    fetchNews() {
