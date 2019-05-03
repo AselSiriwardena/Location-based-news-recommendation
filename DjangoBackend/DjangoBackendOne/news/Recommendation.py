@@ -9,7 +9,6 @@ class Recommendation(object):
      sns.set_style('dark')
      'exec(%matplotlib inline)'
 
-     ratings_data = pd.read_csv(r"C:\Users\M.B.C. Kadawatha\Videos\ml-latest-small\ratings.csv")
 
 
      ratings_data = pd.read_csv(r"C:\Users\M.B.C. Kadawatha\Videos\ml-latest-small\ratings.csv")
@@ -64,14 +63,21 @@ class Recommendation(object):
 
      corr_forrest_gump = pd.DataFrame(movies_like_forest_gump, columns=['Correlation'])
      corr_forrest_gump.dropna(inplace=True)
+     corr_forrest_gump.sort_values('Correlation', ascending=False).head(10)
 
      corr_forrest_gump = corr_forrest_gump.join(ratings_mean_count['rating_counts'])
 
      print("SIMILAR MOVIES........")
 
 
-     print(corr_forrest_gump[corr_forrest_gump ['rating_counts']>50].sort_values('Correlation', ascending=False).head())
+    # print(corr_forrest_gump[corr_forrest_gump ['rating_counts']>50].sort_values('Correlation', ascending=False).head())
 
+     similarMovie = corr_forrest_gump[corr_forrest_gump['rating_counts'] > 50].sort_values('Correlation',ascending=False).head()
+
+     similarMovie = similarMovie.reset_index()
+     similarMovie.columns = ['title', 'Correlation', 'rating_counts']
+     print(similarMovie)
+     print(similarMovie['title'].tolist())    # Final result to be sent for the recommendation
 
      row = [''+str(userId)+'',''+str(movieYetToWatch[0])+'']
 
