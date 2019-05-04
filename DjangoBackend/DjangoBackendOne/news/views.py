@@ -38,16 +38,16 @@ def get_news_by_category(request):
 
 
 
-def get_news_by_recommendation(request):
-    recommendation=request.GET.get('recommendation')
-    print('Requested recommendation...',recommendation)
-
-    data2={
-        "title":xxx,
-        "summary":xxxx,
-        "description":xxx,
-        "link":xxx,
-    }
+# def get_news_by_recommendation(request):
+#     recommendation=request.GET.get('recommendation')
+#     print('Requested recommendation...',recommendation)
+#
+#     data2={
+#         "title":xxx,
+#         "summary":xxxx,
+#         "description":xxx,
+#         "link":xxx,
+#     }
 
 
 
