@@ -9,6 +9,7 @@ from django.http import HttpResponse
 # firebase_admin.initialize_app(cred)
 db = firestore.client()
 # Create your   views here.
+jsonRecoNewsList=[]
 
 
 @csrf_protect
@@ -37,17 +38,40 @@ def get_news_by_category(request):
     return HttpResponse(categorizedNews)
 
 
+def get_user_by_login(request):
 
-# def get_news_by_recommendation(request):
-#     recommendation=request.GET.get('recommendation')
-#     print('Requested recommendation...',recommendation)
-#
-#     data2={
-#         "title":xxx,
-#         "summary":xxxx,
-#         "description":xxx,
-#         "link":xxx,
-#     }
+     userId=request.GET.get('userId')
+     print('Requested userId...',userId)
+
+     location=request.GET.get('location')
+     print('Requested User-Location...',location)
+
+     return HttpResponse(jsonRecoNewsList)
+
+
+def get_news_by_ratings(request):
+
+    reco_userId=request.GET.get('userId')
+    print('Requested recommendation...',reco_userId)
+
+    reco_newsId=request.GET.get('newsId')
+    print('Requested recommendation...',reco_newsId)
+
+    reco_rating=request.GET.get('ratings')
+    print('Requested recommendation...',reco_rating)
+
+    row = [''+str(reco_userId)+'',''+ str(reco_newsId)+'',''+ str(reco_rating)+'']
+
+    with open(r'..\DjangoBackendOne\news\ratings.csv','a') as csvFile:
+        writer = csv.writer(csvFile)
+        writer.writerow(row)
+
+    csvFile.close()
+
+    return HttpResponse("Successfully updated ratings dataset..")
+
+
+
 
 
 

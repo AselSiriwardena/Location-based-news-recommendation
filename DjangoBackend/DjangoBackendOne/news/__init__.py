@@ -11,6 +11,7 @@ from geograpy.extraction import Extractor
 
 import firebase_admin
 from firebase_admin import credentials, firestore
+userId=0
 
 cred = credentials.Certificate("../DjangoBackendOne/news/newsapp-54f7c-firebase-adminsdk-wzja4-dc085fad0b.json")
 firebase_admin.initialize_app(cred)
@@ -441,6 +442,11 @@ def collect_news():
 # thred1.start()
 if os.environ.get('RUN_MAIN', None) != 'true':
     default_app_config = 'mydjangoapp.apps.MydjangoappConfig'
+
+    # objRecommendation=Recommendation()
+    # objRecommendation.getRecommendation(userId)
+
+    print("-------------------")
     collect_news()
 # collect_news()
 #
