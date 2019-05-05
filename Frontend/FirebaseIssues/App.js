@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View,TextInput} from 'react-native';
-import firebase from 'react-native-firebase';
+import * as firebase from 'firebase';
 import Button from 'react-native-button'  ;
 
 
@@ -27,6 +27,7 @@ onRegister = () => {
     .then((loggedInUser)=>{
       this.setState({user:loggedInUser})
       console.log(`REgister with user: ${JSON.stringify(loggedInUser.toJSON())}`);
+      aleart("done");
     }).catch((error)=>{
       console.log(`Register fail with error : ${error}`);
     });
@@ -36,6 +37,7 @@ onLogin = () => {
     .then((loggedInUser)=>{
       this.setState({user:loggedInUser})
       console.log(`Login with user: ${JSON.stringify(loggedInUser.toJSON())}`);
+      aleart("done");
     }).catch((error)=>{
       console.log(`Login fail with error : ${error}`);
     });
@@ -94,7 +96,7 @@ onLogin = () => {
       }
       />
 
-      <view style={{flexDirection:'row'}}>
+      <View style={{flexDirection:'row'}}>
           <Button containerStyle={{
                         padding:10,
                         borderRadius:4,
@@ -123,7 +125,7 @@ onLogin = () => {
       
       
       
-      </view>
+      </View>
 
 
         
@@ -131,5 +133,15 @@ onLogin = () => {
     );
   }
 }
-
+var firebaseConfig = {
+  apiKey: "AIzaSyBJumddViT3Y70F6vmEdP_1VMGXqEFaqgg",
+  authDomain: "newsapp-54f7c.firebaseapp.com",
+  databaseURL: "https://newsapp-54f7c.firebaseio.com",
+  projectId: "newsapp-54f7c",
+  storageBucket: "newsapp-54f7c.appspot.com",
+  messagingSenderId: "841850292385",
+  appId: "1:841850292385:web:6c0e4b04e254e8f0"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
