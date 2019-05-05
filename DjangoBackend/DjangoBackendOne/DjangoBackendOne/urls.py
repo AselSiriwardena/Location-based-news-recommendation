@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from news.views import get_news_by_category
+from news import views
 
 urlpatterns = [
     path('admin/',admin.site.urls),
-    path('category/',get_news_by_category),
-   # path('recognition/',get_user_by_login),
-    #path('ratings/',get_news_by_ratings),
+    path('category/',views.get_news_by_category),
+    path('recognition/',views.get_user_by_login),
+    path('ratings/',views.get_news_by_ratings),
 ]

@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import json
 
 class Recommendation(object):
 
@@ -16,10 +17,10 @@ class Recommendation(object):
   sns.set_style('dark')
   'exec(%matplotlib inline)'
 
-  ratings_data = pd.read_csv(r"..\DjangoBackend\DjangoBackendOne\news\ratings.csv")
+  ratings_data = pd.read_csv(r"..\DjangoBackendOne\news\ratings.csv")
 
   print("Just edited..")
-  news_names = pd.read_csv(r"..\DjangoBackend\DjangoBackendOne\news\News.csv")
+  news_names = pd.read_csv(r"..\DjangoBackendOne\news\News.csv")
 
   news_data = pd.merge(ratings_data, news_names, on='newsId')
 
@@ -98,15 +99,16 @@ class Recommendation(object):
     wholeNewsData=news_names.loc[news_names['title'] ==''+str(newsToBeRecommended[x])+'']
 
     data={
-        'newsId':wholeNewsData[wholeNewsData.columns[0]].tolist()[0],
-        'title':wholeNewsData[wholeNewsData.columns[1]].tolist()[0],
-        'category':wholeNewsData[wholeNewsData.columns[2]].tolist()[0],
-        'summary':wholeNewsData[wholeNewsData.columns[3]].tolist()[0],
-        'description':wholeNewsData[wholeNewsData.columns[4]].tolist()[0],
-        'link':wholeNewsData[wholeNewsData.columns[5]].tolist()[0],
+        "newsId":wholeNewsData[wholeNewsData.columns[0]].tolist()[0],
+        "title":wholeNewsData[wholeNewsData.columns[1]].tolist()[0],
+        "category":wholeNewsData[wholeNewsData.columns[2]].tolist()[0],
+        "summary":wholeNewsData[wholeNewsData.columns[3]].tolist()[0],
+        "description":wholeNewsData[wholeNewsData.columns[4]].tolist()[0],
+        "link":wholeNewsData[wholeNewsData.columns[5]].tolist()[0],
     }
 
-    jsonRecoNewsList.append(data)
+    updatedData=json.dumps(data)
+    jsonRecoNewsList.append(updatedData)
 
    print(jsonRecoNewsList)
 
