@@ -1,4 +1,4 @@
-package com.kal;
+package com.newauth;
 
 import android.app.Application;
 
