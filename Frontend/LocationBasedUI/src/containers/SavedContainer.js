@@ -47,6 +47,24 @@ export default class InboxContainer extends Component {
     this.props.navigation.navigate('Article', { id: item.id });
   };
 
+  componentDidMount(){
+    return fetch('http://192.168.8.100:8000/category/')
+      .then((response) => response.json())
+      .then((responseJson) => {
+
+        this.setState({
+          isLoading: false,
+          dataSource: responseJson,
+        }, function(){
+
+        });
+
+      })
+      .catch((error) =>{
+        console.error(error);
+      });
+  }
+
   //onItempress navigation missing
   renderItem = ({ item }) => (
     <TouchableOpacity
@@ -54,13 +72,13 @@ export default class InboxContainer extends Component {
     activeOpacity={0.8}
     onPress={() => this.onItemPressed(item)}>
     <RkCard rkType='blog' style={styles.card}>
-        <Image rkCardImg source={item.photo} />
+        {/* <Image rkCardImg source={item.photo} /> */}
         <View rkCardHeader style={styles.content}>
           <RkText style={styles.section} rkType='header4'>{item.title}</RkText>
         </View>
         <View rkCardContent>
           <View>
-            <RkText rkType='primary3 mediumLine' numberOfLines={2}>{item.text}</RkText>
+            <RkText rkType='primary3 mediumLine' numberOfLines={2}>{item.summary}</RkText>
           </View>
         </View>
         <View rkCardFooter>
@@ -68,7 +86,7 @@ export default class InboxContainer extends Component {
             {/* <Avatar style={styles.avatar} rkType='circle small' img={item.user.photo} /> */}
             {/* <RkText rkType='header6'>{`${item.user.firstName} ${item.user.lastName}`}</RkText> */}
           </View>
-          <RkText rkType='secondary2 hintColor'>{moment().add(item.time, 'seconds').fromNow()}</RkText>
+          <RkText rkType='secondary2 hintColor'>{moment().add(item.date_time, 'seconds').fromNow()}</RkText>
         </View>
       </RkCard>
     </TouchableOpacity>
@@ -77,7 +95,7 @@ export default class InboxContainer extends Component {
   render() {
     return (
       <FlatList
-      data={this.state.data}
+      data={this.state.dataSource}
       renderItem={this.renderItem}
       keyExtractor={this.extractItemKey}
       style={styles.container}
