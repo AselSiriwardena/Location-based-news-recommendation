@@ -74,7 +74,8 @@ export default class InboxContainer extends Component {
     <RkCard rkType='blog' style={styles.card}>
         {/* <Image rkCardImg source={item.photo} /> */}
         <View rkCardHeader style={styles.content}>
-          <RkText style={styles.section} rkType='header4'>{item.title}</RkText>
+        <Text>{item.title}</Text>
+          {/* <RkText style={styles.section} rkType='header4'>{item.title}</RkText> */}
         </View>
         <View rkCardContent>
           <View>
@@ -82,11 +83,12 @@ export default class InboxContainer extends Component {
           </View>
         </View>
         <View rkCardFooter>
-          <View style={styles.userInfo}>
+        <Text>{item.date_time}</Text>        
+          {/* <View style={styles.userInfo}> */}
             {/* <Avatar style={styles.avatar} rkType='circle small' img={item.user.photo} /> */}
             {/* <RkText rkType='header6'>{`${item.user.firstName} ${item.user.lastName}`}</RkText> */}
-          </View>
-          <RkText rkType='secondary2 hintColor'>{moment().add(item.date_time, 'seconds').fromNow()}</RkText>
+          {/* </View> */}
+          {/* <RkText rkType='secondary2 hintColor'>{moment().add(item.date_time, 'seconds').fromNow()}</RkText> */}
         </View>
       </RkCard>
     </TouchableOpacity>
