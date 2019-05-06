@@ -211,9 +211,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="NLP" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Location-based-news-reccomendation" />
@@ -233,9 +230,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="TestPesh1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Location-based-news-reccomendation" />
@@ -255,9 +249,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="rss_scraper" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Location-based-news-reccomendation" />
@@ -277,10 +268,13 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.FirebasePyth" />
+      <item itemvalue="Python.NLP" />
+      <item itemvalue="Python.TestPesh1" />
+      <item itemvalue="Python.rss_scraper" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.rss_scraper" />
