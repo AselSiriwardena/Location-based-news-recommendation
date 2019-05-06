@@ -40,7 +40,7 @@ export default class FetchExample extends React.Component {
   //         console.log(e);
   //     })
     // return fetch('http://192.168.8.101:8000/category/')
-   return fetch('http://192.168.8.101:8000/category/', {
+   return fetch('http://192.168.8.102:8000/category/', {
           method: 'POST',
           
           headerss: {

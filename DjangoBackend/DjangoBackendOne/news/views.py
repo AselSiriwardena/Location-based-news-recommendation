@@ -4,6 +4,7 @@ from firebase_admin import credentials,firestore
 from django.views.decorators.csrf import csrf_protect
 from django.http import HttpResponse
 from news.Recommendation import Recommendation
+from django.views.decorators.csrf import csrf_protect
 
 import csv
 
@@ -14,9 +15,13 @@ db = firestore.client()
 # Create your   views here.
 
 
-@csrf_protect
 def get_news_by_category(request):
-    category= request.GET.get('category')
+
+    body_unicode = request.body.decode('utf-8')
+    body_data = json.loads(body_unicode)
+    category = body_data['category']
+
+
     print('category requested :',category)
     docs = db.collection(u'news').where(u'category', u'==', 'sports').get()
 
@@ -24,8 +29,6 @@ def get_news_by_category(request):
 
     for doc in docs:
         print(doc._data['title'])
-        # obj= News(doc._data['title'],doc._data['description'],doc._data['summery'],doc._data['link'],doc._data['category'],doc._data['date_time'])
-        # obj.add_locations(doc._data['locations'])
         data = {
             "title": doc._data['title'],
             "category": doc._data['category'],
@@ -36,39 +39,44 @@ def get_news_by_category(request):
 
         }
         categorizedNews.append(data)
-        # categorizedNews.append(obj)
+
     return HttpResponse(categorizedNews)
 
 
 def get_user_by_login(request):
-    # jsonRecoNewsList = []
+
+     body_unicode = request.body.decode('utf-8')
+     body_data = json.loads(body_unicode)
 
      object1=Recommendation()
 
-     #userId=request.GET.get('userId')
-     userId=10
+     userId = body_data['userId']
      print('Requested userId...',str(userId))
+
+     # location=request.GET.get('location')
+
      jsonRecoNewsList=object1.getRecommendation(userId)
 
+     location = body_data['location']
 
-     location=request.GET.get('location')
-     print('Requested User-Location...',location)
+     print('Requested User-Location...',str(location))
 
      return HttpResponse(jsonRecoNewsList)
 
 
+
 def get_news_by_ratings(request):
 
-    #reco_userId=request.GET.get('userId')
-    reco_userId=2
+    body_unicode = request.body.decode('utf-8')
+    body_data = json.loads(body_unicode)
+
+    reco_userId = body_data['userId']
     print('Requested recommendation...',str(reco_userId))
 
-    #reco_newsId=request.GET.get('newsId')
-    reco_newsId=4
+    reco_newsId = body_data['newsId']
     print('Requested recommendation...',str(reco_newsId))
 
-    #reco_rating=request.GET.get('ratings')
-    reco_rating=5
+    reco_rating = body_data['ratings']
     print('Requested recommendation...',str(reco_rating))
 
     row = [''+str(reco_userId)+'',''+ str(reco_newsId)+'',''+ str(reco_rating)+'']
