@@ -95,11 +95,11 @@ export default class Article extends React.Component {
           <Text style={{ marginBottom: 10 }}>
             {description || 'Read More..'}
           </Text>
-          <View>
+          {/* <View>
             <Button onPress={() =>
               this.addToFavourites(source.name)}
               title="+ Favourites"></Button>
-          </View>
+          </View> */}
           <View style={styles.childView}>
           {React_Native_Rating_Bar}
           {/* <Text>
@@ -129,14 +129,15 @@ const styles = {
     fontSize: 10
   },
   childView: {
-    justifyContent: 'center',
+    // justifyContent: 'center',
     flexDirection: 'row',
-    marginTop: 30,
+    marginTop: -2,
   },
   StarImage: {
-    width: 40,
-    height: 40,
+    width: 20,
+    height: 20,
     resizeMode: 'cover',
+    marginLeft: 6,
   },
   featuredTitleStyle: {
     marginHorizontal: 5,
