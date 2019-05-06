@@ -5,8 +5,16 @@ import {
   View,
   Text,
   StyleSheet,
+  Image,
+  TouchableOpacity,
 } from 'react-native';
+import {
+  RkCard, RkStyleSheet,
+  RkText,
+} from 'react-native-ui-kitten';
 import Icon from 'react-native-vector-icons/Ionicons';
+
+const moment = require('moment');
 
 export default class InboxContainer extends Component {
 
@@ -64,6 +72,33 @@ export default class InboxContainer extends Component {
 //   }),
 // });
   }
+  renderItem = ({ item }) => (
+    <TouchableOpacity
+    delayPressIn={70}
+    activeOpacity={0.8}
+    onPress={() => this.onItemPressed(item)}>
+    <RkCard rkType='blog' style={styles.card}>
+        {/* <Image rkCardImg source={item.photo} /> */}
+        <View rkCardHeader style={styles.content}>
+        <Text>{item.title}</Text>
+          {/* <RkText style={styles.section} rkType='header4'>{item.title}</RkText> */}
+        </View>
+        <View rkCardContent>
+          <View>
+            <RkText rkType='primary3 mediumLine' numberOfLines={2}>{item.summary}</RkText>
+          </View>
+        </View>
+        <View rkCardFooter>
+        <Text>{item.date_time}</Text>        
+          {/* <View style={styles.userInfo}> */}
+            {/* <Avatar style={styles.avatar} rkType='circle small' img={item.user.photo} /> */}
+            {/* <RkText rkType='header6'>{`${item.user.firstName} ${item.user.lastName}`}</RkText> */}
+          {/* </View> */}
+          {/* <RkText rkType='secondary2 hintColor'>{moment().add(item.date_time, 'seconds').fromNow()}</RkText> */}
+        </View>
+      </RkCard>
+    </TouchableOpacity>
+  );
 
 
   render() {
@@ -75,21 +110,33 @@ export default class InboxContainer extends Component {
         </View>
       )
     }
+    
     return (
       <View style={{flex: 1, paddingTop:20}}>
         <FlatList
-          data={this.state.dataSource}
-          renderItem={({item}) => <Text>{item.title}, {item.releaseYear}</Text>}
-          keyExtractor={({id}, index) => id}
-        />
+      data={this.state.dataSource}
+      renderItem={this.renderItem}
+      keyExtractor={this.extractItemKey}
+      style={styles.container}
+    />
       </View>
     );
   }
 };
 
-const styles = StyleSheet.create({
-  wrapper: {
-    display: 'flex',
-    padding: 50,
-  }
-});
+const styles = RkStyleSheet.create(theme => ({
+  container: {
+    backgroundColor: theme.colors.screen.scroll,
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+  },
+  card: {
+    marginVertical: 8,
+  },
+  userInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  
+}));
+
