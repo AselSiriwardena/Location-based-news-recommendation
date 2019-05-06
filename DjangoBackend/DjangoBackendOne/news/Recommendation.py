@@ -8,6 +8,15 @@ import json
 
 class Recommendation(object):
 
+ def extractText(self, description1):
+  cleanr = re.compile('<.*?>')
+  text = re.sub(cleanr, '', description1)
+  return text
+
+ def getImgLink(self, description2):
+  imgLink = re.search("(?P<url>https?://[^\s]+)", description2).group("url")
+  return imgLink
+
 
  def getRecommendation(self,userId):
 
