@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9977ddc-9a6e-4964-89b2-4794f1aa411d" name="Default Changelist" comment="just to import lib">
-      <change beforePath="$PROJECT_DIR$/.idea/Location-based-news-reccomendation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Location-based-news-reccomendation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/rss_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/rss_scraper.py" afterDir="false" />
+    <list default="true" id="3b994388-38ef-423f-9a07-4b7a6275e394" name="Default" comment="Added Recommendation Filed and Updated..">
+      <change beforePath="$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/Recommendation.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/Recommendation.py" afterDir="false" />
     </list>
     <ignored path="Frontend/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,30 +30,59 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Backend/rss_scraper.py">
+    <leaf>
+      <file leaf-file-name="Recommendation.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/Recommendation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="417">
+              <caret line="119" column="32" lean-forward="true" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backend/FirebasePyth.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+            <state relative-caret-position="216">
+              <caret line="359" column="26" selection-start-line="359" selection-start-column="26" selection-end-line="359" selection-end-column="26" />
+              <folding>
+                <element signature="e#26#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backend/NLP.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/DjangoBackendOne/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state>
+              <folding>
+                <element signature="e#640#672#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/DjangoBackendOne/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
             </state>
           </provider>
         </entry>
@@ -84,6 +111,7 @@
         <option value="$PROJECT_DIR$/Backend/NLP.py" />
         <option value="$PROJECT_DIR$/Backend/FirebasePyth.py" />
         <option value="$PROJECT_DIR$/Backend/rss_scraper.py" />
+        <option value="$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/Recommendation.py" />
       </list>
     </option>
   </component>
@@ -98,73 +126,50 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Location-based-news-reccomendation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Location-based-news-reccomendation" type="462c0819:PsiDirectoryNode" />
+              <item name="abcd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abcd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Location-based-news-reccomendation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Location-based-news-reccomendation" type="462c0819:PsiDirectoryNode" />
-              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="abcd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abcd" type="462c0819:PsiDirectoryNode" />
+              <item name="DjangoBackend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Location-based-news-reccomendation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Location-based-news-reccomendation" type="462c0819:PsiDirectoryNode" />
-              <item name="Backend" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="abcd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abcd" type="462c0819:PsiDirectoryNode" />
+              <item name="DjangoBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="DjangoBackendOne" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Location-based-news-reccomendation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Location-based-news-reccomendation" type="462c0819:PsiDirectoryNode" />
-              <item name="Backend" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="abcd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abcd" type="462c0819:PsiDirectoryNode" />
+              <item name="DjangoBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="DjangoBackendOne" type="462c0819:PsiDirectoryNode" />
+              <item name="DjangoBackendOne" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Location-based-news-reccomendation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Location-based-news-reccomendation" type="462c0819:PsiDirectoryNode" />
-              <item name="Backend" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="abcd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abcd" type="462c0819:PsiDirectoryNode" />
+              <item name="DjangoBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="DjangoBackendOne" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Location-based-news-reccomendation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Location-based-news-reccomendation" type="462c0819:PsiDirectoryNode" />
-              <item name="Backend" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="geograpy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Location-based-news-reccomendation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Location-based-news-reccomendation" type="462c0819:PsiDirectoryNode" />
-              <item name="Backend" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="geograpy" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Location-based-news-reccomendation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Location-based-news-reccomendation" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Location-based-news-reccomendation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Location-based-news-reccomendation" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="abcd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abcd" type="462c0819:PsiDirectoryNode" />
+              <item name="DjangoBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="DjangoBackendOne" type="462c0819:PsiDirectoryNode" />
+              <item name="stanford-postagger-2018-10-16" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -179,6 +184,239 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Backend" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/DjangoBackendOne/urls.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/views.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/LocationBasedUI/notes</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/LocationBasedUI/src/components/Article.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/LocationBasedUI/src/containers/SavedContainer.js</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/.buckconfig</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/.flowconfig</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/.gitattributes</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/.watchmanconfig</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/App.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/__tests__/App-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/BUCK</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/build.gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/build_defs.bzl</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/proguard-rules.pro</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/debug/AndroidManifest.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/AndroidManifest.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/java/com/retrive/MainActivity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/java/com/retrive/MainApplication.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/res/mipmap-hdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/res/mipmap-mdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/res/values/strings.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/app/src/main/res/values/styles.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/build.gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/gradle.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/gradle/wrapper/gradle-wrapper.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/gradle/wrapper/gradle-wrapper.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/gradlew</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/gradlew.bat</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/keystores/BUCK</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/keystores/debug.keystore.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/android/settings.gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/app.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/babel.config.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retrive-tvOS/Info.plist</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retrive-tvOSTests/Info.plist</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retrive.xcodeproj/project.pbxproj</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retrive.xcodeproj/xcshareddata/xcschemes/retrive-tvOS.xcscheme</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retrive.xcodeproj/xcshareddata/xcschemes/retrive.xcscheme</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retrive/AppDelegate.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retrive/AppDelegate.m</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retrive/Base.lproj/LaunchScreen.xib</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retrive/Images.xcassets/AppIcon.appiconset/Contents.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retrive/Images.xcassets/Contents.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retrive/Info.plist</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retrive/main.m</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retriveTests/Info.plist</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/ios/retriveTests/retriveTests.m</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/metro.config.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/retrive/yarn.lock</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/.buckconfig</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/.flowconfig</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/.gitattributes</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/.watchmanconfig</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/App.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/__tests__/App-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/BUCK</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/build.gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/build_defs.bzl</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/proguard-rules.pro</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/debug/AndroidManifest.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/AndroidManifest.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/java/com/retrive/MainActivity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/java/com/retrive/MainApplication.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/res/mipmap-hdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/res/mipmap-mdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/res/values/strings.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/app/src/main/res/values/styles.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/build.gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/gradle.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/gradle/wrapper/gradle-wrapper.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/gradle/wrapper/gradle-wrapper.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/gradlew</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/gradlew.bat</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/keystores/BUCK</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/keystores/debug.keystore.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/android/settings.gradle</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/app.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/babel.config.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retrive-tvOS/Info.plist</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retrive-tvOSTests/Info.plist</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retrive.xcodeproj/project.pbxproj</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retrive.xcodeproj/xcshareddata/xcschemes/retrive-tvOS.xcscheme</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retrive.xcodeproj/xcshareddata/xcschemes/retrive.xcscheme</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retrive/AppDelegate.h</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retrive/AppDelegate.m</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retrive/Base.lproj/LaunchScreen.xib</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retrive/Images.xcassets/AppIcon.appiconset/Contents.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retrive/Images.xcassets/Contents.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retrive/Info.plist</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retrive/main.m</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retriveTests/Info.plist</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/ios/retriveTests/retriveTests.m</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/metro.config.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/FirebaseIssues/retrive/yarn.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/LocationBasedUI/New Text Document.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/LocationBasedUI/screenshots/forgotPassword.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/LocationBasedUI/screenshots/forgotPasswordError.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/LocationBasedUI/screenshots/logIn.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Frontend/LocationBasedUI/screenshots/logInError.png</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -474,33 +712,47 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="-4" width="1873" height="1085" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22693452" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50074404" side_tool="true" weight="0.44117647" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" weight="0.4722222" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49925596" visible="true" weight="0.052287582" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19068493" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26436782" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.08254963" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.26197758" />
-      <window_info anchor="bottom" id="Database Changes" order="7" weight="0.32868218" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32868218" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.19979613" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002743" side_tool="true" weight="0.1630094" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32868218" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.329863" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.26197758" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32868218" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26436782" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32868218" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.08254963" />
       <window_info anchor="right" id="Database" order="4" weight="0.32939324" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002743" side_tool="true" weight="0.1630094" />
+      <window_info anchor="bottom" id="Database Changes" order="7" weight="0.32868218" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.329863" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.19979613" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
@@ -525,26 +777,95 @@
     <option name="LAST_COMMIT_MESSAGE" value="just to import lib" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TestPesh1.py" />
-    <entry file="file://$PROJECT_DIR$/Backend/RssFeed.py">
+    <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/News.csv___jb_old___">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="153">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/News.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/ratings.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="211" column="7" lean-forward="true" selection-start-line="211" selection-start-column="7" selection-end-line="211" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/DjangoBackendOne/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/DjangoBackendOne/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/newsHistory.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="359" column="26" selection-start-line="359" selection-start-column="26" selection-end-line="359" selection-end-column="26" />
           <folding>
-            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#26#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="153">
-            <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/DjangoBackendOne/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#640#672#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/DjangoBackendOne/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoBackend/DjangoBackendOne/news/Recommendation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="119" column="32" lean-forward="true" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestPesh1.py" />
+    <entry file="file://$PROJECT_DIR$/Backend/RssFeed.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/geograpy/places.py" />
     <entry file="file://$PROJECT_DIR$/Backend/venv/Lib/site-packages/Naked/templates/setup_py_file.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -563,22 +884,10 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Backend/venv/Lib/site-packages/geograpy/places.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Backend/venv/Lib/site-packages/Naked/toolshed/c/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file:///usr/local/lib/python3.6/dist-packages/geograpy/places.py" />
     <entry file="file:///usr/local/lib/python3.6/dist-packages/geograpy/__init__.py" />

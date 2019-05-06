@@ -107,13 +107,17 @@ class Recommendation(object):
 
     wholeNewsData=news_names.loc[news_names['title'] ==''+str(newsToBeRecommended[x])+'']
 
+    image_link=self.getImgLink(wholeNewsData[wholeNewsData.columns[4]].tolist()[0])
+    description=self.extractText(wholeNewsData[wholeNewsData.columns[4]].tolist()[0])
+
     data={
         "newsId":wholeNewsData[wholeNewsData.columns[0]].tolist()[0],
         "title":wholeNewsData[wholeNewsData.columns[1]].tolist()[0],
         "category":wholeNewsData[wholeNewsData.columns[2]].tolist()[0],
         "summary":wholeNewsData[wholeNewsData.columns[3]].tolist()[0],
-        "description":wholeNewsData[wholeNewsData.columns[4]].tolist()[0],
+        "description":description,
         "link":wholeNewsData[wholeNewsData.columns[5]].tolist()[0],
+        "image_link":image_link,
     }
 
     updatedData=json.dumps(data)
