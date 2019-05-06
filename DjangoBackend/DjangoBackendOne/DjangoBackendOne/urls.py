@@ -18,8 +18,9 @@ from django.urls import path,include
 from news import views
 
 urlpatterns = [
-    path('admin/',admin.site.urls),
-    path('category/',views.get_news_by_category),
-    path('recognition/',views.get_user_by_login),
-    path('ratings/',views.get_news_by_ratings),
+    path('admin/', admin.site.urls),
+    path('category/', views.get_news_by_category),
+    path('recognition/', views.get_user_by_login),
+    path('location/', views.get_news_by_location),
+    path('allnews/', views.get_all_news),
 ]
