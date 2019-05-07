@@ -280,4 +280,910 @@ const styles = {
     textShadowRadius: 3
   }
 };
+////////////////////////////////////
+import React, { Component } from 'react';
+import {
+  View,
+  FlatList,
+  Image,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+} from 'react-native';
+import { data } from '../data2';
+import {
+  RkText,
+  RkCard, RkStyleSheet,
+} from 'react-native-ui-kitten';
+import Icon from 'react-native-vector-icons/Ionicons';
+// import NoResults from '../components/saved/NoResults';
+import colors from '../styles/colors';
+const moment = require('moment');
+
+
+export default class InboxContainer extends Component {
+
+ 
+  static navigationOptions = {
+    tabBarLabel: 'SAVED',
+    tabBarIcon: ({ tintColor }) => (
+        <Icon
+            name="ios-heart-outline"
+            size={22}
+            color={tintColor}
+        />
+    ),
+  };
+
+  state = {
+    data: data.getArticles(),
+  };
+
+  extractItemKey = (item) => `${item.id}`;
+
+  //onItempress navigation missing
+  renderItem = ({ item }) => (
+    <TouchableOpacity
+    delayPressIn={70}
+      activeOpacity={0.8}
+      onPress={() => this.onItemPressed(item)}>
+      <RkCard rkType='imgBlock' style={styles2.card}>
+        <Image rkCardImg source={item.photo} />
+        <View rkCardImgOverlay rkCardContent style={styles2.overlay}>
+          <RkText rkType='header4 inverseColor'>{item.header}</RkText>
+          <RkText
+            style={styles2.time}
+            rkType='secondary2 inverseColor'>{moment().add(item.time, 'seconds').fromNow()}
+          </RkText>
+        </View>
+        {/* <View rkCardFooter>
+          <SocialBar rkType='space' showLabel />
+        </View > */}
+      </RkCard>
+      </TouchableOpacity>
+  );
+
+  render() {
+    return (
+      <FlatList
+      data={this.state.data}
+      renderItem={this.renderItem}
+      keyExtractor={this.extractItemKey}
+      style={styles2.container}
+    />
+    );
+  }
+};
+
+const styles = StyleSheet.create({
+  wrapper: {
+    display: 'flex',
+    backgroundColor: colors.white,
+  },
+});
+
+const styles2 = RkStyleSheet.create(theme => ({
+  container: {
+    backgroundColor: theme.colors.screen.scroll,
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+  },
+  card: {
+    marginVertical: 8,
+  },
+  time: {
+    marginTop: 5,
+  },
+}));
+
+
+///////////////////////////////////////////////////////////////////////
+import React, { Component } from 'react';
+import {
+  View,
+  FlatList,
+  Image,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+} from 'react-native';
+import { data } from '../data2';
+import {
+  RkText,
+  RkCard, RkStyleSheet,
+} from 'react-native-ui-kitten';
+import Icon from 'react-native-vector-icons/Ionicons';
+// import NoResults from '../components/saved/NoResults';
+import colors from '../styles/colors';
+const moment = require('moment');
+
+
+export default class InboxContainer extends Component {
+
+ 
+  static navigationOptions = {
+    tabBarLabel: 'SAVED',
+    tabBarIcon: ({ tintColor }) => (
+        <Icon
+            name="ios-heart-outline"
+            size={22}
+            color={tintColor}
+        />
+    ),
+  };
+
+  state = {
+    data: data.getArticles(),
+  };
+
+  extractItemKey = (item) => `${item.id}`;
+
+  //onItempress navigation missing
+  renderItem = ({ item }) => (
+    <TouchableOpacity
+    delayPressIn={70}
+    activeOpacity={0.8}
+    onPress={() => this.onItemPressed(item)}>
+    <RkCard style={styles.card}>
+      <View rkCardHeader>
+        <View>
+          <RkText rkType='header4'>{item.header}</RkText>
+          <RkText rkType='secondary2 hintColor'>{moment().add(item.time, 'seconds').fromNow()}</RkText>
+        </View>
+      </View>
+      <Image rkCardImg source={item.photo} />
+      {/* <View style={styles.footer} rkCardFooter>
+        <SocialBar />
+      </View > */}
+    </RkCard>
+  </TouchableOpacity>
+  );
+
+  render() {
+    return (
+      <FlatList
+      data={this.state.data}
+      renderItem={this.renderItem}
+      keyExtractor={this.extractItemKey}
+      style={styles.container}
+    />
+    );
+  }
+};
+
+const styles2 = StyleSheet.create({
+  wrapper: {
+    display: 'flex',
+    backgroundColor: colors.white,
+  },
+});
+
+const styles = RkStyleSheet.create(theme => ({
+  container: {
+    backgroundColor: theme.colors.screen.scroll,
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+  },
+  card: {
+    marginVertical: 8,
+  },
+  footer: {
+    paddingTop: 16,
+  },
+  time: {
+    marginTop: 5,
+  },
+}));
+
+
+/////////////////////////////////////////////////////////
+
+import React from 'react';
+
+import {
+  ScrollView,
+  Image,
+  View,
+  TouchableOpacity,
+} from 'react-native';
+import {
+  RkCard,
+  RkText,
+  RkStyleSheet,
+} from 'react-native-ui-kitten';
+import { data } from '../data2';
+import { SocialBar } from '../components/socialBar';
+// import NavigationType from '../../config/navigation/propTypes';
+
+const moment = require('moment');
+
+export class Article extends React.Component {
+//   static propTypes = {
+//     navigation: NavigationType.isRequired,
+//   };
+//   static navigationOptions = {
+//     title: 'Article View'.toUpperCase(),
+//   };
+
+  constructor(props) {
+    super(props);
+    // const articleId = this.props.navigation.getParam('id', 1);
+    this.data = data.getArticle(articleId);
+  }
+
+
+  render = () => (
+    <ScrollView style={styles.root}>
+      <RkCard rkType='article'>
+        <Image rkCardImg source={this.data.photo} />
+        <View rkCardHeader>
+          <View>
+            <RkText style={styles.title} rkType='header4'>{this.data.header}</RkText>
+            <RkText rkType='secondary2 hintColor'>
+              {moment().add(this.data.time, 'seconds').fromNow()}
+            </RkText>
+          </View>
+          {/* <TouchableOpacity onPress={this.onAvatarPressed}>
+            <Avatar rkType='circle' img={this.data.user.photo} />
+          </TouchableOpacity> */}
+        </View>
+        <View rkCardContent>
+          <View>
+            <RkText rkType='primary3 bigLine'>{this.data.text}</RkText>
+          </View>
+        </View>
+        <View rkCardFooter>
+          <SocialBar />
+        </View>
+      </RkCard>
+    </ScrollView>
+  )
+}
+
+const styles = RkStyleSheet.create(theme => ({
+  root: {
+    backgroundColor: theme.colors.screen.base,
+  },
+  title: {
+    marginBottom: 5,
+  },
+}));
+
+///////////////////////////////////////////////////////////////////
+import React, { Component } from 'react';
+import {
+  View,
+  FlatList,
+  Image,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+} from 'react-native';
+import { data } from '../data2';
+import {
+  RkText,
+  RkCard, RkStyleSheet,
+} from 'react-native-ui-kitten';
+import {SocialBar} from '../components/socialBar';
+import Icon from 'react-native-vector-icons/Ionicons';
+// import NoResults from '../components/saved/NoResults';
+import colors from '../styles/colors';
+const moment = require('moment');
+
+
+export default class InboxContainer extends Component {
+
+ 
+  static navigationOptions = {
+    tabBarLabel: 'SAVED',
+    tabBarIcon: ({ tintColor }) => (
+        <Icon
+            name="ios-heart-outline"
+            size={22}
+            color={tintColor}
+        />
+    ),
+  };
+
+  state = {
+    data: data.getArticles(),
+  };
+
+  extractItemKey = (item) => `${item.id}`;
+
+  //onItempress navigation missing
+  renderItem = ({ item }) => (
+    <TouchableOpacity
+    delayPressIn={70}
+    activeOpacity={0.8}
+    onPress={() => this.onItemPressed(item)}>
+    <RkCard style={styles.card}>
+      <View rkCardHeader>
+        <View>
+          <RkText rkType='header4'>{item.header}</RkText>
+          <RkText rkType='secondary2 hintColor'>{moment().add(item.time, 'seconds').fromNow()}</RkText>
+        </View>
+      </View>
+      <Image rkCardImg source={item.photo} />
+      <View style={styles.footer} rkCardFooter>
+        <SocialBar />
+      </View >
+    </RkCard>
+  </TouchableOpacity>
+  );
+
+  render() {
+    return (
+      <FlatList
+      data={this.state.data}
+      renderItem={this.renderItem}
+      keyExtractor={this.extractItemKey}
+      style={styles.container}
+    />
+    );
+  }
+};
+
+const styles2 = StyleSheet.create({
+  wrapper: {
+    display: 'flex',
+    backgroundColor: colors.white,
+  },
+});
+
+const styles = RkStyleSheet.create(theme => ({
+  container: {
+    backgroundColor: theme.colors.screen.scroll,
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+  },
+  card: {
+    marginVertical: 8,
+  },
+  footer: {
+    paddingTop: 16,
+  },
+  time: {
+    marginTop: 5,
+  },
+}));
+
+/////////////////////////////////////////////////////////
+import React, { Component } from 'react';
+import {
+  View,
+  FlatList,
+  Image,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+} from 'react-native';
+import { data } from '../data2';
+import {
+  RkText,
+  RkCard, RkStyleSheet,
+} from 'react-native-ui-kitten';
+// import {SocialBar} from '../components/socialBar';
+import Icon from 'react-native-vector-icons/Ionicons';
+// import NoResults from '../components/saved/NoResults';
+import colors from '../styles/colors';
+const moment = require('moment');
+
+
+export default class InboxContainer extends Component {
+
+ 
+  static navigationOptions = {
+    tabBarLabel: 'SAVED',
+    tabBarIcon: ({ tintColor }) => (
+        <Icon
+            name="ios-heart-outline"
+            size={22}
+            color={tintColor}
+        />
+    ),
+  };
+
+  state = {
+    data: data.getArticles(),
+  };
+
+  extractItemKey = (item) => `${item.id}`;
+
+  //onItempress navigation missing
+  renderItem = ({ item }) => (
+    <TouchableOpacity
+    delayPressIn={70}
+    activeOpacity={0.8}
+    onPress={() => this.onItemPressed(item)}>
+    <RkCard rkType='blog' style={styles.card}>
+        <Image rkCardImg source={item.photo} />
+        <View rkCardHeader style={styles.content}>
+          <RkText style={styles.section} rkType='header4'>{item.title}</RkText>
+        </View>
+        <View rkCardContent>
+          <View>
+            <RkText rkType='primary3 mediumLine' numberOfLines={2}>{item.text}</RkText>
+          </View>
+        </View>
+        <View rkCardFooter>
+          <View style={styles.userInfo}>
+            {/* <Avatar style={styles.avatar} rkType='circle small' img={item.user.photo} /> */}
+            {/* <RkText rkType='header6'>{`${item.user.firstName} ${item.user.lastName}`}</RkText> */}
+          </View>
+          <RkText rkType='secondary2 hintColor'>{moment().add(item.time, 'seconds').fromNow()}</RkText>
+        </View>
+      </RkCard>
+    </TouchableOpacity>
+  );
+
+  render() {
+    return (
+      <FlatList
+      data={this.state.data}
+      renderItem={this.renderItem}
+      keyExtractor={this.extractItemKey}
+      style={styles.container}
+    />
+    );
+  }
+};
+
+
+
+const styles = RkStyleSheet.create(theme => ({
+  container: {
+    backgroundColor: theme.colors.screen.scroll,
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+  },
+  card: {
+    marginVertical: 8,
+  },
+  userInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  
+}));
+
+////////////////////////////////////////////////////////////////
+import React, { Component } from 'react';
+import {
+  ScrollView,
+  Image,
+  View,
+  TouchableOpacity,
+  Text,
+  StyleSheet,
+} from 'react-native';
+import {
+  RkCard,
+  RkText,
+  RkStyleSheet,
+} from 'react-native-ui-kitten';
+import { data } from '../data2';
+import { SocialBar } from '../components/socialBar';
+import Icon from 'react-native-vector-icons/Ionicons';
+
+const moment = require('moment');
+
+export default class InboxContainer extends Component {
+  static navigationOptions = {
+    tabBarLabel: 'PROFILE',
+    tabBarIcon: ({ tintColor }) => (
+      <Icon
+        name="ios-contact-outline"
+        size={22}
+        color={tintColor}
+      />
+    ),
+  };
+  constructor(props) {
+    super(props);
+  
+  }
+
+  render = () => (
+    <ScrollView style={styles.root}>
+      <RkCard rkType='article'>
+        <Image rkCardImg source={this.data2.photo} />
+        <View rkCardHeader>
+          <View>
+            <RkText style={styles.title} rkType='header4'>{this.data2.header}</RkText>
+            <RkText rkType='secondary2 hintColor'>
+              {moment().add(this.data2.time, 'seconds').fromNow()}
+            </RkText>
+          </View>
+        </View>
+        <View rkCardContent>
+          <View>
+            <RkText rkType='primary3 bigLine'>{this.data2.text}</RkText>
+          </View>
+        </View>
+        <View rkCardFooter>
+          <SocialBar />
+        </View>
+      </RkCard>
+    </ScrollView>
+  )
+}
+
+const styles = RkStyleSheet.create(theme => ({
+  root: {
+    backgroundColor: theme.colors.screen.base,
+  },
+  title: {
+    marginBottom: 5,
+  },
+}));
+
+
+
+
+
+//////////////////////////////////////////////////////////
+saved container
+import React, { Component } from 'react';
+import {
+  View,
+  FlatList,
+  Image,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+} from 'react-native';
+import { data } from '../data2';
+import {
+  RkText,
+  RkCard, RkStyleSheet,
+} from 'react-native-ui-kitten';
+// import {SocialBar} from '../components/socialBar';
+import Icon from 'react-native-vector-icons/Ionicons';
+// import NoResults from '../components/saved/NoResults';
+import colors from '../styles/colors';
+import NavigationType from '../config/navigation/propTypes';
+
+const moment = require('moment');
+
+
+export default class InboxContainer extends Component {
+  static propTypes = {
+    navigation: NavigationType.isRequired,
+  };
+ 
+  static navigationOptions = {
+    tabBarLabel: 'SAVED',
+    tabBarIcon: ({ tintColor }) => (
+        <Icon
+            name="ios-heart-outline"
+            size={22}
+            color={tintColor}
+        />
+    ),
+  };
+
+  state = {
+    data: data.getArticles(),
+  };
+
+  extractItemKey = (item) => `${item.id}`;
+
+  onItemPressed = (item) => {
+    this.props.navigation.navigate('Article', { id: item.id });
+  };
+
+  componentDidMount(){
+    return fetch('http://192.168.8.100:8000/category/')
+      .then((response) => response.json())
+      .then((responseJson) => {
+
+        this.setState({
+          isLoading: false,
+          dataSource: responseJson,
+        }, function(){
+
+        });
+
+      })
+      .catch((error) =>{
+        console.error(error);
+      });
+  }
+
+  //onItempress navigation missing
+  renderItem = ({ item }) => (
+    <TouchableOpacity
+    delayPressIn={70}
+    activeOpacity={0.8}
+    onPress={() => this.onItemPressed(item)}>
+    <RkCard rkType='blog' style={styles.card}>
+        {/* <Image rkCardImg source={item.photo} /> */}
+        <View rkCardHeader style={styles.content}>
+        <Text>{item.title}</Text>
+          {/* <RkText style={styles.section} rkType='header4'>{item.title}</RkText> */}
+        </View>
+        <View rkCardContent>
+          <View>
+            <RkText rkType='primary3 mediumLine' numberOfLines={2}>{item.summary}</RkText>
+          </View>
+        </View>
+        <View rkCardFooter>
+        <Text>{item.date_time}</Text>        
+          {/* <View style={styles.userInfo}> */}
+            {/* <Avatar style={styles.avatar} rkType='circle small' img={item.user.photo} /> */}
+            {/* <RkText rkType='header6'>{`${item.user.firstName} ${item.user.lastName}`}</RkText> */}
+          {/* </View> */}
+          {/* <RkText rkType='secondary2 hintColor'>{moment().add(item.date_time, 'seconds').fromNow()}</RkText> */}
+        </View>
+      </RkCard>
+    </TouchableOpacity>
+  );
+
+  render() {
+    return (
+      <FlatList
+      data={this.state.dataSource}
+      renderItem={this.renderItem}
+      keyExtractor={this.extractItemKey}
+      style={styles.container}
+    />
+    );
+  }
+};
+
+
+
+const styles = RkStyleSheet.create(theme => ({
+  container: {
+    backgroundColor: theme.colors.screen.scroll,
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+  },
+  card: {
+    marginVertical: 8,
+  },
+  userInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  
+}));
+
+
+
+//////////////////////////////////////////////////
+import React from 'react';
+import { FlatList, ActivityIndicator, Text, View  } from 'react-native';
+
+export default class FetchExample extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state ={ isLoading: true}
+  }
+
+  componentDidMount(){
+  //   fetch('http://192.168.8.101:8000/category/', {
+  //     method: 'POST',
+      
+  //     headerss: {
+  //         'Accept': 'application/json',
+  //         "Content-Type": "application/json",                
+  //     },
+  //     body: JSON.stringify({
+  //         cname: 'fuck',
+         
+  //     })
+  // })
+  //     .then((resp)=>{
+  //         return resp.json();
+  //     })
+  //     .then((jsonData) => {
+  //         console.log(JSON.stringify(jsonData));
+  //         // if(jsonData['result'] == true){
+  //         //     AsyncStorage.setItem('USER', jsonData.user);
+  //         //     AsyncStorage.setItem('TOKEN', jsonData.token);
+  //         //     alert("You are: "+jsonData['user']);
+  //         //     this.props.navigation.navigate('Dashboard');
+  //         // }
+  //         // else{
+  //         //   alert("Wrong uername/password. Try again");
+  //         // }
+  //     })
+  //     .catch((e)=>{
+  //         console.log(e);
+  //     })
+    // return fetch('http://192.168.8.101:8000/category/')
+   return fetch('http://192.168.8.102:8000/category/', {
+          method: 'POST',
+          
+          headerss: {
+              'Accept': 'application/json',
+              "Content-Type": "application/json",                
+          },
+          body: JSON.stringify({
+              cname: 'sports',
+             
+          })
+      })
+      .then((response) => response.json())
+      .then((responseJson) => {
+
+        this.setState({
+          isLoading: false,
+          dataSource: responseJson,
+        }, function(){
+
+        });
+
+      })
+      .catch((error) =>{
+        console.error(error);
+      });
+//     fetch('http://192.168.8.100:8000/category/', {
+//   method: 'POST',
+//   headers: {
+//     Accept: 'application/json',
+//     'Content-Type': 'application/json',
+//   },
+//   body: JSON.stringify({
+//     cname: 'sports',
+   
+//   }),
+// });
+  }
+
+
+
+  render(){
+
+    if(this.state.isLoading){
+      return(
+        <View style={{flex: 1, padding: 20}}>
+          <ActivityIndicator/>
+        </View>
+      )
+    }
+
+    return(
+      <View style={{flex: 1, paddingTop:20}}>
+        <FlatList
+          data={this.state.dataSource}
+          renderItem={({item}) => <Text>{item.title}, {item.summary}</Text>}
+          keyExtractor={({id}, index) => id}
+        />
+      </View>
+    );
+  }
+}
+
+
+//////////////////////////////////////////////////////////
+FETCHING ALL NEWS
+import React, { Component } from 'react';
+import {
+  View,
+  FlatList,
+  Image,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+} from 'react-native';
+import { data } from '../data2';
+import {
+  RkText,
+  RkCard, RkStyleSheet,
+} from 'react-native-ui-kitten';
+// import {SocialBar} from '../components/socialBar';
+import Icon from 'react-native-vector-icons/Ionicons';
+// import NoResults from '../components/saved/NoResults';
+import colors from '../styles/colors';
+import NavigationType from '../config/navigation/propTypes';
+
+const moment = require('moment');
+
+
+export default class InboxContainer extends Component {
+  static propTypes = {
+    navigation: NavigationType.isRequired,
+  };
+ 
+  static navigationOptions = {
+    tabBarLabel: 'SAVED',
+    tabBarIcon: ({ tintColor }) => (
+        <Icon
+            name="ios-heart-outline"
+            size={22}
+            color={tintColor}
+        />
+    ),
+  };
+
+  state = {
+    data: data.getArticles(),
+  };
+
+  extractItemKey = (item) => `${item.id}`;
+
+  onItemPressed = (item) => {
+    this.props.navigation.navigate('Article', { id: item.id });
+  };
+
+  componentDidMount(){
+    return fetch('http://192.168.8.100:8000/category/')
+      .then((response) => response.json())
+      .then((responseJson) => {
+
+        this.setState({
+          isLoading: false,
+          dataSource: responseJson,
+        }, function(){
+
+        });
+
+      })
+      .catch((error) =>{
+        console.error(error);
+      });
+  }
+
+  //onItempress navigation missing
+  renderItem = ({ item }) => (
+    <TouchableOpacity
+    delayPressIn={70}
+    activeOpacity={0.8}
+    onPress={() => this.onItemPressed(item)}>
+    <RkCard rkType='blog' style={styles.card}>
+        {/* <Image rkCardImg source={item.photo} /> */}
+        <View rkCardHeader style={styles.content}>
+        <Text>{item.title}</Text>
+          {/* <RkText style={styles.section} rkType='header4'>{item.title}</RkText> */}
+        </View>
+        <View rkCardContent>
+          <View>
+            <RkText rkType='primary3 mediumLine' numberOfLines={2}>{item.summary}</RkText>
+          </View>
+        </View>
+        <View rkCardFooter>
+        <Text>{item.date_time}</Text>        
+          {/* <View style={styles.userInfo}> */}
+            {/* <Avatar style={styles.avatar} rkType='circle small' img={item.user.photo} /> */}
+            {/* <RkText rkType='header6'>{`${item.user.firstName} ${item.user.lastName}`}</RkText> */}
+          {/* </View> */}
+          {/* <RkText rkType='secondary2 hintColor'>{moment().add(item.date_time, 'seconds').fromNow()}</RkText> */}
+        </View>
+      </RkCard>
+    </TouchableOpacity>
+  );
+
+  render() {
+    return (
+      <FlatList
+      data={this.state.dataSource}
+      renderItem={this.renderItem}
+      keyExtractor={this.extractItemKey}
+      style={styles.container}
+    />
+    );
+  }
+};
+
+
+
+const styles = RkStyleSheet.create(theme => ({
+  container: {
+    backgroundColor: theme.colors.screen.scroll,
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+  },
+  card: {
+    marginVertical: 8,
+  },
+  userInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  
+}));
 

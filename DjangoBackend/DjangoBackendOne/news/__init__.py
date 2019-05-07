@@ -431,7 +431,7 @@ def collect_news():
         else:
 
             print('Connection failed with url :', url)
-    WAIT_SECONDS = 100  # timer for thread
+    WAIT_SECONDS = 10000  # timer for thread
     print(time.ctime())
     news_in_db.clear()
     threading.Timer(WAIT_SECONDS, collect_news).start()

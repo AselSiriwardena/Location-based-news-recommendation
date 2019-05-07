@@ -13,6 +13,7 @@
     "react-native": "0.55.1",
     "react-native-elements": "^0.19.1",
     "react-native-geocoding": "^0.2.0",
+    "react-native-ui-kitten": "3.0.1",
     "react-native-vector-icons": "^4.6.0",
     "react-navigation": "^1.5.11",
     "react-navigation-redux-helpers": "^1.0.5",
