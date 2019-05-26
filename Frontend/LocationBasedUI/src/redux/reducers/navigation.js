@@ -3,7 +3,7 @@ import { NavigationActions } from 'react-navigation';
 import { AppNavigator } from '../../navigators/AppNavigator';
 import { StatusBar } from 'react-native';
 
-const firstAction = AppNavigator.router.getActionForPathAndParams('LoggedIn');
+const firstAction = AppNavigator.router.getActionForPathAndParams('LoggedOut');
 const initialNavState = AppNavigator.router.getStateForAction(firstAction);
 
 export const nav = (state = initialNavState, action) => {

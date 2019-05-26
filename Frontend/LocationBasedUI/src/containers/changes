@@ -14,7 +14,6 @@ import {
 } from 'react-native-ui-kitten';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-
 const moment = require('moment');
 
 export default class InboxContainer extends Component {
@@ -24,7 +23,7 @@ export default class InboxContainer extends Component {
     this.state ={ isLoading: true}
   }
   static navigationOptions = {
-    tabBarLabel: 'CATEGORY',
+    tabBarLabel: 'Catogory',
     tabBarIcon: ({ tintColor }) => (
       <Icon
         name="ios-contact-outline"
@@ -116,7 +115,6 @@ export default class InboxContainer extends Component {
     
     return (
       <View style={{flex: 1, paddingTop:20}}>
-      
         <FlatList
       data={this.state.dataSource}
       renderItem={this.renderItem}
@@ -143,3 +141,5 @@ const styles = RkStyleSheet.create(theme => ({
   },
   
 }));
+Working code
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

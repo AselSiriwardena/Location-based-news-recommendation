@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View,TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Geocoder from 'react-native-geocoding';
+import SearchBar from '../components/SearchBar';
 
 export default class InboxContainer extends Component {
 //   constructor(){
@@ -47,7 +48,6 @@ constructor(props) {
 componentDidMount() {
   navigator.geolocation.getCurrentPosition(
    (position) => {
-     console.log("wokeeey");
      console.log(position);
      this.setState({
      latitude: position.coords.latitude,
@@ -62,11 +62,12 @@ componentDidMount() {
 
    getData(){
 		// Geocoder.init('AIzaSyDtWe3TP1KeWdRoxg9W22aTNzM8HIk6zzg');
-    Geocoder.setApiKey("AIzaSyDtWe3TP1KeWdRoxg9W22aTNzM8HIk6zzg");
+    Geocoder.setApiKey("AIzaSyDg08XwkH-af7hrCC1q91Iu3TOkrCpNOik");
+    // Geocoder.setApiKey("AIzaSyDtWe3TP1KeWdRoxg9W22aTNzM8HIk6zzg");
     Geocoder.getFromLatLng(this.state.latitude,this.state.longitude).then(
       json => {
         var address_component = json.results[0].address_components[0];
-        var stateName = json.results[0].address_components.filter(x => x.types.filter(t => t == 'administrative_area_level_2').length > 0)[0].short_name;
+        var stateName = json.results[0].address_components.filter(x => x.types.filter(t => t == 'locality').length > 0)[0].short_name;
         alert(stateName);
       },
       error => {
@@ -77,7 +78,7 @@ componentDidMount() {
   
 	}
   static navigationOptions = {
-    tabBarLabel: 'Location',
+    tabBarLabel: 'LOCATION',
     tabBarIcon: ({ tintColor }) => (
       <Icon
         name="ios-ionic"
@@ -90,6 +91,9 @@ componentDidMount() {
   render() {
     return (
       <View style={styles.wrapper}>
+        <View style={styles.search}>
+          <SearchBar />
+        </View>
         <View>
 			 
        <Text> Longitude:- {this.state.latitude} </Text>
@@ -113,5 +117,8 @@ const styles = StyleSheet.create({
   wrapper: {
     display: 'flex',
     padding: 50,
+  },
+  search: {
+    marginRight: 10,
   }
 });

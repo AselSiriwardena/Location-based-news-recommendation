@@ -63,7 +63,7 @@ export default class Listings extends Component {
                         >
                             {listing.title}
                         </Text>
-                        <Text style={styles.listingPrice}>${listing.price} {listing.priceType}</Text>
+                        {/* <Text style={styles.listingPrice}>${listing.price} {listing.priceType}</Text> */}
                         {listing.stars > 0 ?
                             <Stars
                                 votes={listing.stars}

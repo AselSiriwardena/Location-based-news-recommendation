@@ -40,7 +40,7 @@ export default class InboxContainer extends Component {
   }
 
   static navigationOptions = {
-    tabBarLabel: 'INBOX',
+    tabBarLabel: 'NEWS',
     tabBarIcon: ({ tintColor }) => (
       <Icon
         name="ios-archive-outline"
