@@ -42,7 +42,7 @@ export default class LoggedOut extends Component {
             source={require('../img/trapco.png')}
             style={styles.logo}
           />
-          <Text style={styles.welcomeText}>Welcome to Trapco.</Text>
+          <Text style={styles.welcomeText}>Welcome to Noticias.</Text>
           <RoundedButton
             text="Continue with Facebook"
             textColor={colors.green01}

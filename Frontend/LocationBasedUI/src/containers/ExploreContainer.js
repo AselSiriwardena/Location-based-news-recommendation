@@ -62,7 +62,7 @@ export default class InboxContainer extends Component {
                     style={styles.scrollview}
                     contentContainerStyle={styles.scrollViewContent}
                 >
-                    <Text style={styles.heading}>Explore Trapco</Text>
+                    <Text style={styles.heading}>Explore Noticias</Text>
                     <View style={styles.categories}>
                         <Categories categories={categoriesList} />
                     </View>

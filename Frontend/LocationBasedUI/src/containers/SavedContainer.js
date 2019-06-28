@@ -35,7 +35,7 @@ export default class InboxContainer extends Component {
   };
 
   componentDidMount(){
-    return fetch('http://192.168.8.100:8000/category/', {
+    return fetch('http://172.31.98.4:8000/category/', {
           method: 'POST',
           
           headerss: {
